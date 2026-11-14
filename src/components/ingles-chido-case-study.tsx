@@ -328,21 +328,21 @@ const captures: AelpCapture[] = [
 ];
 
 const mobileStack = [
-  ["React Native", "Interfaces móviles multiplataforma."],
-  ["Expo", "Runtime, herramientas y empaquetado de la app."],
-  ["TypeScript", "Tipos para pantallas, navegación y lógica."],
-  ["Expo Router", "Rutas y navegación organizadas por archivos."],
-  ["AsyncStorage", "Almacenamiento local del estado de sesión."],
-  ["Reanimated · Skia", "Movimiento de interfaz y gráficos de la ruta."],
+  ["React Native", "Interfaz donde se realizan las actividades de aprendizaje."],
+  ["Expo", "Entorno de ejecución y herramientas del prototipo móvil."],
+  ["TypeScript", "Estructura tipada para pantallas, estados y registros locales."],
+  ["Expo Router", "Navegación entre onboarding, ruta y lecciones."],
+  ["AsyncStorage", "Almacenamiento local del estado de sesión; sin sincronización remota."],
+  ["Reanimated · Skia", "Interacción visual de la ruta de aprendizaje."],
 ];
 
 const mobileStackEnglish: Record<string, string> = {
-  "React Native": "Cross-platform mobile interfaces.",
-  Expo: "Runtime, tools, and app packaging.",
-  TypeScript: "Types for screens, navigation, and logic.",
-  "Expo Router": "File-based routes and navigation.",
-  AsyncStorage: "Local storage for session state.",
-  "Reanimated · Skia": "Interface motion and learning-path graphics.",
+  "React Native": "The interface where learning activities take place.",
+  Expo: "Runtime and tooling for the mobile prototype.",
+  TypeScript: "Typed structure for screens, states, and local records.",
+  "Expo Router": "Navigation across onboarding, the learning path, and lessons.",
+  AsyncStorage: "Local session-state storage without remote synchronization.",
+  "Reanimated · Skia": "Visual interaction along the learning path.",
 };
 
 export function InglesChidoCaseStudy() {
@@ -356,13 +356,13 @@ export function InglesChidoCaseStudy() {
           <div className="ingles-case-hero-grid">
             <div className="ingles-case-intro">
               <p className="eyebrow">
-                <span>01</span> / <LanguageText es="CASO DE ESTUDIO · APP MÓVIL" en="MOBILE PRODUCT CASE STUDY" />
+                <span>01</span> / <LanguageText es="EDUCATIONAL DATA SCIENCE & LEARNING ANALYTICS" en="EDUCATIONAL DATA SCIENCE & LEARNING ANALYTICS" />
               </p>
               <h1>Inglés Chido<span>.</span></h1>
               <p className="ingles-case-subtitle">
-                <LanguageText es="App interactiva para aprender inglés" en="Interactive English learning app" />
+                <LanguageText es="Aprendizaje de inglés basado en evidencias" en="Evidence-based English learning" />
               </p>
-              <p className="ingles-case-lede"><LanguageText es="Una app móvil para aprender inglés desde A1 con onboarding, ruta visual y lecciones que registran evidencia de práctica." en="A mobile app for learning English from A1, with onboarding, a visual learning path, and lessons that record practice evidence." /></p>
+              <p className="ingles-case-lede"><LanguageText es="Inglés Chido evoluciona hacia AELP, una plataforma de aprendizaje adaptativo. El prototipo registra intentos, respuestas y errores como base para evaluar el progreso y, más adelante, orientar la práctica." en="Inglés Chido is evolving into AELP, an adaptive learning platform. Its prototype records attempts, answers, and errors as a foundation for assessing progress and, later, guiding practice." /></p>
               <div className="ingles-case-tags" aria-label="Tecnologías móviles / Mobile technologies">
                 {["React Native", "Expo", "TypeScript", "Expo Router"].map(
                   (tag) => <span key={tag}>{tag}</span>,
@@ -391,10 +391,10 @@ export function InglesChidoCaseStudy() {
         <div className="shell ingles-case-overview-grid">
           <div>
             <p className="eyebrow"><span>02</span> / <LanguageText es="PRODUCTO" en="PRODUCT" /></p>
-            <h2><LanguageText es="De la práctica a una ruta de aprendizaje." en="From practice to a learning path." /></h2>
+            <h2><LanguageText es="Completar no equivale a dominar." en="Completion is not mastery." /></h2>
           </div>
           <p>
-            <LanguageText es="Inglés Chido organiza un primer recorrido A1 en una app móvil. Parte de una idea de producto: completar una actividad no basta para evidenciar aprendizaje. El prototipo permite personalizar el inicio, recorrer lecciones y consultar el progreso local; la adaptación automática todavía está planeada." en="Inglés Chido organizes an initial A1 learning journey in a mobile app. Its product premise is that completing an activity alone is not evidence of learning. The prototype lets learners personalize onboarding, move through lessons, and review local progress; automatic adaptation is still planned." />
+            <LanguageText es="Terminar una actividad no demuestra que se haya comprendido el contenido. El prototipo A1 ya registra intentos, respuestas, errores y necesidades de repaso de forma local. La propuesta de AELP es convertir esas evidencias en indicadores de dificultad y progreso para evaluar el aprendizaje y, en una etapa posterior, ajustar la práctica." en="Finishing an activity does not prove understanding. The A1 prototype already records attempts, answers, errors, and review needs locally. AELP aims to turn that evidence into indicators of difficulty and progress, then use it to adjust practice in a later stage." />
           </p>
         </div>
       </section>
@@ -416,10 +416,10 @@ export function InglesChidoCaseStudy() {
       <section className="ingles-case-stack">
         <div className="shell ingles-case-stack-grid">
           <div>
-            <p className="eyebrow"><span>04</span> / <LanguageText es="STACK MÓVIL" en="MOBILE STACK" /></p>
-            <h2><LanguageText es="Una base nativa y modular." en="A native, modular foundation." /></h2>
+            <p className="eyebrow"><span>04</span> / <LanguageText es="STACK TÉCNICO" en="TECH STACK" /></p>
+            <h2><LanguageText es="La experiencia genera evidencias." en="The experience creates evidence." /></h2>
             <p>
-              <LanguageText es="Estas herramientas están declaradas y se usan en la aplicación móvil para navegación, estado local e interacción visual." en="These tools are declared and used in the mobile app for navigation, local state, and visual interaction." />
+              <LanguageText es="La app móvil es la fuente actual de datos de aprendizaje. Su estado y registros son locales; el servicio API, la persistencia centralizada y el análisis con pandas pertenecen a etapas posteriores." en="The mobile app is the current source of learning data. Its state and records are local; the API, centralized storage, and pandas analysis belong to later stages." />
             </p>
           </div>
           <div className="ingles-case-stack-list">
@@ -430,11 +430,15 @@ export function InglesChidoCaseStudy() {
             ))}
             <article className="ingles-case-stack-backend">
               <strong>Python · FastAPI · SQLAlchemy</strong>
-              <span><LanguageText es="Base del servicio API; el flujo móvil principal aún no está integrado." en="API service foundation; it is not yet integrated with the main mobile flow." /></span>
+              <span><LanguageText es="Base del servicio API en desarrollo; aún no recibe los registros del flujo móvil principal." en="API service foundation in development; it does not yet receive records from the main mobile flow." /></span>
             </article>
             <article className="ingles-case-stack-backend">
               <strong>PostgreSQL · Alembic</strong>
-              <span><LanguageText es="Persistencia y migraciones previstas para la evolución del backend." en="Persistence and migrations planned for the backend's future development." /></span>
+              <span><LanguageText es="Base técnica para la persistencia centralizada prevista; los datos del producto siguen siendo locales." en="Technical foundation for planned centralized storage; product data remains local." /></span>
+            </article>
+            <article className="ingles-case-stack-backend">
+              <strong>Python · pandas</strong>
+              <span><LanguageText es="Procesamiento e indicadores de aprendizaje previstos; todavía no hay una capa analítica integrada." en="Planned processing and learning indicators; no analytics layer is integrated yet." /></span>
             </article>
           </div>
         </div>
@@ -444,29 +448,29 @@ export function InglesChidoCaseStudy() {
         <div className="shell">
           <p className="eyebrow"><span>05</span> / <LanguageText es="ARQUITECTURA" en="ARCHITECTURE" /></p>
           <div className="ingles-case-section-heading">
-            <h2><LanguageText es="Aplicación móvil → API → base de datos" en="Mobile app → API → database" /></h2>
-            <p><LanguageText es="La app funciona con estado y datos locales; la conexión remota sigue en desarrollo." en="The app currently uses local state and data; remote connectivity is still under development." /></p>
+            <h2><LanguageText es="Registros locales → API → datos analizables" en="Local records → API → analyzable data" /></h2>
+            <p><LanguageText es="La recopilación funciona hoy dentro del prototipo. La integración remota y el procesamiento analítico aún no forman parte del flujo móvil." en="Data collection currently takes place within the prototype. Remote integration and analytical processing are not yet part of the mobile flow." /></p>
           </div>
           <div className="ingles-case-architecture-grid">
             <article>
               <Smartphone size={20} />
               <span><LanguageText es="IMPLEMENTADO" en="IMPLEMENTED" /></span>
               <h3><LanguageText es="Aplicación móvil" en="Mobile app" /></h3>
-              <p><LanguageText es="Expo, React Native y TypeScript. La app agrupa onboarding, ruta A1, lecciones y módulos de progreso." en="Expo, React Native, and TypeScript. The app brings together onboarding, the A1 path, lessons, and progress modules." /></p>
+              <p><LanguageText es="Expo, React Native y TypeScript. Las lecciones y el progreso generan registros locales de intentos, respuestas y errores." en="Expo, React Native, and TypeScript. Lessons and progress generate local records of attempts, answers, and errors." /></p>
             </article>
             <i aria-hidden="true">→</i>
             <article>
               <Code2 size={20} />
               <span><LanguageText es="BASE EN DESARROLLO" en="FOUNDATION IN DEVELOPMENT" /></span>
               <h3><LanguageText es="API del backend" en="Backend API" /></h3>
-              <p><LanguageText es="Servicio modular FastAPI con configuración y health checks. No respalda aún el flujo principal de la app." en="A modular FastAPI service with configuration and health checks. It does not yet support the app's main flow." /></p>
+              <p><LanguageText es="Servicio modular FastAPI con configuración y health checks. Su integración con los registros de aprendizaje sigue en desarrollo." en="A modular FastAPI service with configuration and health checks. Integration with learning records is still in development." /></p>
             </article>
             <i aria-hidden="true">→</i>
             <article>
               <Database size={20} />
               <span><LanguageText es="PREVISTO" en="PLANNED" /></span>
               <h3><LanguageText es="Base de datos" en="Database" /></h3>
-              <p><LanguageText es="PostgreSQL y Alembic están en la base técnica; la persistencia del producto todavía es local." en="PostgreSQL and Alembic are part of the technical foundation; product data is still stored locally." /></p>
+              <p><LanguageText es="PostgreSQL y Alembic forman la base prevista para centralizar evidencias. Después podría procesarse esa información con Python y pandas." en="PostgreSQL and Alembic are the planned foundation for centralizing evidence. Python and pandas could process those records later." /></p>
             </article>
           </div>
         </div>
@@ -475,11 +479,11 @@ export function InglesChidoCaseStudy() {
       <section className="ingles-case-highlights">
         <div className="shell">
           <p className="eyebrow"><span>06</span> / <LanguageText es="INGENIERÍA" en="ENGINEERING" /></p>
-          <h2><LanguageText es="Decisiones que estructuran la experiencia." en="Decisions that shape the experience." /></h2>
+          <h2><LanguageText es="Evidencias con contexto y trazabilidad." en="Evidence with context and traceability." /></h2>
           <div className="ingles-case-highlight-grid">
-            <article><Layers3 size={19} /><h3><LanguageText es="Ruta por estado y presentación" en="State and presentation" /></h3><p><LanguageText es="Los datos curriculares, el estado de avance y la escena visual viven en módulos separados." en="Curriculum data, progress state, and the visual scene live in separate modules." /></p></article>
-            <article><Code2 size={19} /><h3><LanguageText es="Motor de lecciones" en="Lesson engine" /></h3><p><LanguageText es="Pasos y actividades se componen en un flujo reutilizable para las primeras lecciones A1." en="Steps and activities are composed into a reusable flow for the first A1 lessons." /></p></article>
-            <article><Database size={19} /><h3><LanguageText es="Evidencia local" en="Local evidence" /></h3><p><LanguageText es="El modelo distingue intentos, respuestas y necesidades de repaso; no implica analítica remota." en="The model distinguishes attempts, answers, and review needs; it does not imply remote analytics." /></p></article>
+            <article><Layers3 size={19} /><h3><LanguageText es="Datos y presentación separados" en="Data and presentation separated" /></h3><p><LanguageText es="Los datos curriculares, los estados de avance y la escena visual se organizan en módulos distintos." en="Curriculum data, progress states, and the visual scene are organized in separate modules." /></p></article>
+            <article><Code2 size={19} /><h3><LanguageText es="Lecciones estructuradas" en="Structured lessons" /></h3><p><LanguageText es="Los pasos y actividades A1 comparten un flujo reutilizable que sitúa cada respuesta en una lección." en="A1 steps and activities share a reusable flow that places each answer within a lesson." /></p></article>
+            <article><Database size={19} /><h3><LanguageText es="Registros de aprendizaje" en="Learning records" /></h3><p><LanguageText es="El estado local distingue intentos, respuestas, errores y necesidades de repaso; aún no existe procesamiento analítico remoto." en="Local state distinguishes attempts, answers, errors, and review needs; remote analytical processing is not in place yet." /></p></article>
             <article><Check size={19} /><h3><LanguageText es="Temas y accesibilidad" en="Themes and accessibility" /></h3><p><LanguageText es="La app incluye modos claro y oscuro, y contempla movimiento reducido en sus animaciones." en="The app includes light and dark themes and respects reduced-motion preferences in its animations." /></p></article>
           </div>
         </div>
@@ -489,11 +493,11 @@ export function InglesChidoCaseStudy() {
         <div className="shell ingles-case-overview-grid">
           <div>
             <p className="eyebrow"><span>07</span> / <LanguageText es="MI PARTICIPACIÓN" en="MY ROLE" /></p>
-            <h2><LanguageText es="Producto y desarrollo móvil." en="Product and mobile development." /></h2>
+            <h2><LanguageText es="Producto, desarrollo y estrategia de datos." en="Product, development, and data strategy." /></h2>
           </div>
           <div>
             <p>
-              <LanguageText es="Desarrollo Inglés Chido de forma individual y me encargo del proyecto de principio a fin: producto, experiencia móvil y desarrollo de la aplicación. La base de backend también forma parte del trabajo; la API y la persistencia siguen en desarrollo y aún no están integradas al flujo principal de la app." en="I develop Inglés Chido independently and lead the project end to end: product, mobile experience, and app development. The backend foundation is also part of the work; the API and persistence are still in development and are not yet integrated into the app's main flow." />
+              <LanguageText es="Lidero la visión de producto, la experiencia y el desarrollo móvil de Inglés Chido. También defino cómo los intentos, respuestas y errores pueden convertirse en evidencias útiles para analizar el aprendizaje. La integración de la API y la persistencia centralizada siguen en desarrollo." en="I lead Inglés Chido's product vision, learning experience, and mobile development. I also define how attempts, answers, and errors could become useful evidence for learning analysis. API integration and centralized storage remain in development." />
             </p>
           </div>
         </div>
@@ -502,30 +506,36 @@ export function InglesChidoCaseStudy() {
       <section className="ingles-case-status">
         <div className="shell">
           <p className="eyebrow"><span>08</span> / <LanguageText es="ESTADO ACTUAL" en="CURRENT STATUS" /></p>
-          <h2><LanguageText es="Un producto en evolución." en="A product in progress." /></h2>
+          <h2><LanguageText es="De registros locales a decisiones educativas." en="From local records to learning decisions." /></h2>
           <div className="ingles-case-status-grid">
-            <article><span>01</span><h3><LanguageText es="Implementado" en="Implemented" /></h3><p><LanguageText es="Bienvenida, onboarding local, ruta A1, lecciones iniciales, repaso, vocabulario y progreso." en="Welcome flow, local onboarding, A1 path, introductory lessons, review, vocabulary, and progress." /></p></article>
-            <article><span>02</span><h3><LanguageText es="En desarrollo" en="In development" /></h3><p><LanguageText es="Backend modular y evolución de los flujos locales hacia servicios compartidos." en="A modular backend and the gradual move from local flows to shared services." /></p></article>
-            <article><span>03</span><h3><LanguageText es="Planeado" en="Planned" /></h3><p><LanguageText es="Sincronización remota y adaptación de sesiones a partir de evidencias de aprendizaje." en="Remote synchronization and practice-session adaptation based on learning evidence." /></p></article>
+            <article><span>01</span><h3><LanguageText es="Implementado" en="Implemented" /></h3><p><LanguageText es="Prototipo móvil A1 con lecciones, progreso y registro local de intentos, respuestas, errores y repaso." en="A1 mobile prototype with lessons, progress, and local records of attempts, answers, errors, and review needs." /></p></article>
+            <article><span>02</span><h3><LanguageText es="En desarrollo" en="In development" /></h3><p><LanguageText es="Base FastAPI y preparación de la integración para llevar evidencias a una persistencia centralizada." en="FastAPI foundation and integration work to move learning evidence into centralized storage." /></p></article>
+            <article><span>03</span><h3><LanguageText es="Planeado" en="Planned" /></h3><p><LanguageText es="Indicadores de dominio, detección de patrones y recomendaciones para adaptar la práctica." en="Mastery indicators, pattern detection, and recommendations to adapt practice." /></p></article>
           </div>
           <aside className="ingles-case-data-note" aria-labelledby="ingles-case-data-note-title">
             <div className="ingles-case-data-note-heading">
-              <span className="ingles-case-data-note-status"><LanguageText es="Planificado" en="Planned" /></span>
+              <span className="ingles-case-data-note-status"><LanguageText es="HOJA DE RUTA" en="ROADMAP" /></span>
               <h3 id="ingles-case-data-note-title">
-                <LanguageText es="Próxima evolución: analítica del aprendizaje y personalización basada en datos" en="Next evolution: learning analytics and data-informed personalization" />
+                <LanguageText es="Learning Analytics: tres etapas de evolución" en="Learning analytics: three stages of development" />
               </h3>
             </div>
             <div className="ingles-case-data-note-copy">
               <p>
                 <LanguageText
-                  es="Inglés Chido contempla incorporar un módulo de análisis de datos orientado a comprender cómo aprende cada usuario. A través de la recopilación de datos de interacción y desempeño —como progreso, respuestas correctas e incorrectas, tiempos de respuesta y dificultades por tema— se buscará identificar patrones de aprendizaje y generar recomendaciones personalizadas."
-                  en="Inglés Chido plans to add a data-analysis module to better understand how each learner learns. Once implemented, it would use interaction and performance data—such as progress, correct and incorrect answers, response times, and topic-level difficulties—to identify learning patterns and provide personalized recommendations."
+                  es="1. Captura local implementada: el prototipo conserva intentos, respuestas, errores y necesidades de repaso dentro de la app. Estos registros describen la práctica, pero todavía no producen indicadores analíticos de dominio."
+                  en="1. Implemented local capture: the prototype keeps attempts, answers, errors, and review needs within the app. These records describe practice but do not yet produce analytical mastery indicators."
                 />
               </p>
               <p>
                 <LanguageText
-                  es="El objetivo es evolucionar hacia una experiencia educativa adaptativa, en la que contenidos, ejercicios y rutas de estudio puedan ajustarse a las necesidades y al progreso individual de cada estudiante. Esta funcionalidad forma parte de la planificación futura del proyecto."
-                  en="The goal is an adaptive learning experience in which content, exercises, and study paths can respond to each student’s needs and progress. This functionality is part of the project’s future plans."
+                  es="2. Integración de datos en desarrollo: la base FastAPI y PostgreSQL busca reunir evidencias entre sesiones. El procesamiento con Python y pandas todavía está previsto, no integrado al flujo móvil."
+                  en="2. Data integration in development: the FastAPI and PostgreSQL foundation aims to bring evidence together across sessions. Processing with Python and pandas is still planned and is not integrated into the mobile flow."
+                />
+              </p>
+              <p>
+                <LanguageText
+                  es="3. Analítica adaptativa planificada: calcular métricas de dominio, identificar dificultades y patrones, explorar modelos predictivos y recomendar práctica según el progreso. Aún no hay modelos entrenados ni recomendaciones automáticas en producción."
+                  en="3. Planned adaptive analytics: calculate mastery metrics, identify difficulties and patterns, explore predictive models, and recommend practice based on progress. There are no trained models or production recommendations yet."
                 />
               </p>
             </div>
