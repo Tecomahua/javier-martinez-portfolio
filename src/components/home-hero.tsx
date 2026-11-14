@@ -35,8 +35,8 @@ export function HomeHero() {
 
           <p className={styles.description}>
             <LanguageText
-              es="Estudiante de Ingeniería en Sistemas Computacionales orientado al análisis de datos. En SPA Orizaba limpié y combiné fuentes públicas con Python y pandas para apoyar una decisión; también trabajo con SQL en proyectos de integración. Busco una residencia como Data Analyst Intern desde enero de 2027. Excel y Power BI forman parte de mi aprendizaje actual."
-              en="Computer Systems Engineering student focused on data analysis. In SPA Orizaba, I cleaned and combined public data with Python and pandas to support a decision; I also work with SQL in integration projects. I seek a Data Analyst Intern placement from January 2027. Excel and Power BI are part of my current learning path."
+              es="Estudiante de Ingeniería en Sistemas Computacionales orientado al análisis de datos. Trabajo con Python, pandas y SQL para preparar información y comunicar hallazgos con claridad. Busco una residencia como Data Analyst Intern desde enero de 2027; actualmente amplío mi formación en Excel y Power BI."
+              en="Computer Systems Engineering student focused on data analysis. I use Python, pandas, and SQL to prepare information and communicate findings clearly. I seek a Data Analyst Intern placement from January 2027 and am currently building my Excel and Power BI skills."
             />
           </p>
 
