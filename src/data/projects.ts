@@ -70,33 +70,18 @@ export const projects: Project[] = [
     slug: "tutor-ia-nem",
     number: "03",
     name: "STI-NEM",
-    category: "Tecnología Educativa · Tutoría con IA",
-    role: "Frontend Developer · Módulo docente",
+    category: "Tecnología educativa · Integración de datos",
+    role: "Frontend docente · Apoyo en integración de datos",
     status: "Proyecto académico · equipo",
-    summary:
-      "Tutor inteligente con IA para estudiantes de cuarto de primaria, alineado con la Nueva Escuela Mexicana y diseñado para generar ejercicios que acompañen su aprendizaje.",
-    problem:
-      "Los alumnos de cuarto de primaria necesitan practicar contenidos curriculares con orientación. STI-NEM plantea un tutor inteligente que les propone ejercicios y acompaña su aprendizaje.",
-    solution:
-      "Un sistema web con módulos para estudiante, docente, dirección y administración, cuyo objetivo inicial es generar ejercicios con IA alineados con la Nueva Escuela Mexicana.",
-    contribution:
-      "Desarrollé las pantallas del módulo docente, incluidas las vistas de dashboard, grupos y ejercicios. Mi aporte fue la interfaz docente dentro del equipo que desarrolla el sistema completo.",
-    tags: ["Tutoría con IA", "Nueva Escuela Mexicana", "4.º de primaria", "Módulo docente", "Frontend"],
-    techStack: ["Next.js 16.3.1", "React 19.2", "TypeScript estricto", "Tailwind CSS 4", "shadcn/ui · Base Nova"],
-    overview: [
-      "STI-NEM es un sistema inteligente de tutoría asistida con IA, pensado para alumnos de cuarto de primaria. Su objetivo inicial es generar ejercicios alineados con la Nueva Escuela Mexicana y ayudar al alumno a aprender mientras los resuelve. La documentación describe perfiles de estudiante, docente, dirección y administración, con funciones específicas para cada rol.",
-      "El trabajo se realizó en equipo como parte de un proyecto de tesis de maestría del Tecnológico Nacional de México.",
-      "Las capturas disponibles documentan las vistas. Los repositorios del frontend y backend no son públicos ni accesibles desde este entorno, por lo que no pude verificar dependencias, rutas, servicios o conexión real con la API.",
-    ],
-    implemented: [
-      "Pantallas del módulo docente: dashboard, gestión de grupos y vistas relacionadas con estudiantes y ejercicios.",
-      "Interfaz de criterios curriculares para ejercicios. Las capturas muestran las pantallas, pero no comprueban por sí solas la generación mediante IA.",
-    ],
-    planned: [
-      "Verificar contratos, rutas y tecnologías contra el repositorio sti-nem-front cuando el código esté accesible.",
-      "Confirmar qué flujos consumen API, usan mocks o requieren servicios del backend sti-nem-back.",
-      "Validar la operación de generación de ejercicios, autenticación y perfiles administrativos.",
-    ],
+    summary: "Sistema educativo en equipo con PostgreSQL, Prisma, NestJS y Next.js; mi trabajo combinó frontend docente y apoyo a la integración y validación de datos.",
+    problem: "El sistema necesita conectar interfaces educativas con datos relacionales consistentes y servicios de backend.",
+    solution: "Una arquitectura con frontend Next.js, API NestJS y PostgreSQL mediante Prisma, con revisión de integridad en una copia aislada.",
+    contribution: "Desarrollé principalmente pantallas docentes y apoyé los servicios, adaptadores y la revisión de conexión de base de datos junto al equipo.",
+    tags: ["SQL", "PostgreSQL", "Integración de datos", "Prisma", "NestJS"],
+    techStack: ["PostgreSQL 18", "Prisma", "NestJS", "Next.js", "TypeScript"],
+    overview: ["La bitácora registra 52 tablas, 26,805 registros auditados y 99 claves foráneas validadas en una copia aislada; no son métricas de producción.", "Proyecto de servicio social en equipo vinculado a una tesis de maestría del Tecnológico Nacional de México."],
+    implemented: ["Pantallas docentes y servicios con adaptadores para contratos de API.", "Revisión de integridad, migración Prisma autorizada y pruebas de disponibilidad y protección de rutas documentadas en la bitácora."],
+    planned: ["Completar el adaptador de tutoría estudiantil y datos académicos parciales.", "Configurar plantillas y probar el worker de generación en una copia aislada."],
   },
   {
     slug: "spa-orizaba",
