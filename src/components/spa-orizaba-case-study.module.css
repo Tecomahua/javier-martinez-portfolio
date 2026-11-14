@@ -65,9 +65,9 @@
 
 .tags {
   margin-top: 22px;
+  gap: 10px;
 }
 
-.tags span,
 .toolTags span {
   padding: 7px 9px;
   border: 1px solid var(--border);
@@ -75,6 +75,15 @@
   background: var(--bg);
   color: var(--text);
   font: 8px var(--mono-font);
+}
+
+.tags span {
+  padding: 10px 13px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--text);
+  font: 11px var(--mono-font);
 }
 
 .heroActions {
@@ -88,6 +97,16 @@
 .heroAction,
 .repoAction {
   margin-top: 0;
+  min-height: 70px;
+  gap: 29px;
+  padding-inline: 28px;
+  font-size: 17px;
+}
+
+.heroAction svg,
+.repoAction svg {
+  width: 22px;
+  height: 22px;
 }
 
 .heroFigure {
@@ -679,24 +698,3 @@
   .pipelineStep h3 {
     margin-top: 16px;
   }
-
-  .recommendation {
-    grid-template-columns: 22px 1fr;
-  }
-
-  .recommendation em {
-    grid-column: 2;
-    grid-row: auto;
-    margin-top: 4px;
-  }
-
-  .heroFigure figcaption {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .coverFrame {
-    width: 96%;
-  }
-}
