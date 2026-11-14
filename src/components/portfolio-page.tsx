@@ -158,6 +158,24 @@ export function PortfolioPage() {
         </div>
       </section>
 
+      <section className="certificates-section section-anchor" id="certificados">
+        <div className="shell">
+          <div className="section-heading" data-reveal>
+            <p className="eyebrow"><span>05</span> / <LanguageText es="CERTIFICADOS" en="CERTIFICATES" /></p>
+            <h2><LanguageText es="Formación que se puede comprobar." en="Verifiable learning." /></h2>
+          </div>
+          <div className="certificates-grid" data-reveal>
+            {[
+              ["Excel Basics for Data Analysis · IBM / Coursera", "/certificates/coursera-1a3df3oetj0j.pdf"],
+              ["Introduction to Data Analytics · IBM / Coursera", "/certificates/coursera-4tc1uninet65.pdf"],
+              ["Data Visualization and Dashboards with Excel and Cognos · IBM / Coursera", "/certificates/coursera-k311rbbqbk98.pdf"],
+              ["Creación de dashboards interactivos en Excel utilizando Python", "/certificates/dashboards-python-excel.pdf"],
+              ["SQL básico", "/certificates/sql-basic-certificate.pdf"],
+            ].map(([label, href]) => <a className="certificate-link" href={getPublicAssetPath(href)} target="_blank" rel="noreferrer" key={href}>{label} ↗</a>)}
+          </div>
+        </div>
+      </section>
+
       <section className="contact-section section-anchor" id="contacto">
         <div className="contact-orbit" aria-hidden="true">
           <span />

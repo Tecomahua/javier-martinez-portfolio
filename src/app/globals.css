@@ -5412,3 +5412,9 @@ html[data-scrolled="true"] .site-header {
   .analysis-track { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
   .analysis-track span { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }
+
+.certificates-section { padding-block: 90px; border-bottom: 1px solid var(--border); background: var(--bg); }
+.certificates-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; margin-top: 30px; }
+.certificate-link { padding: 18px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 13px; line-height: 1.6; }
+.certificate-link:hover { border-color: var(--accent); color: var(--accent-bright); }
+@media (max-width: 700px) { .certificates-grid { grid-template-columns: 1fr; } }
