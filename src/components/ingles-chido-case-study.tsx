@@ -236,10 +236,11 @@ const captures: AelpCapture[] = [
     "categoryEn": "Learning path",
     "width": 592,
     "height": 1280
-  }
-];
-
-const additionalCaptures: AelpCapture[] = [
+  },
+  {"file": "micamino-abecedario-claro.webp", "title": "Mi camino · Abecedario", "description": "Tarjeta de la lección Abecedario abierta sobre la ruta A1.", "alt": "Mi camino · Abecedario en tema claro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Alphabet", "descriptionEn": "Alphabet lesson card opened on the A1 path.", "altEn": "My path · Alphabet in light theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
+  {"file": "micamino-abecedario-oscuro.webp", "title": "Mi camino · Abecedario", "description": "Tarjeta de la lección Abecedario abierta sobre la ruta A1.", "alt": "Mi camino · Abecedario en tema oscuro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Alphabet", "descriptionEn": "Alphabet lesson card opened on the A1 path.", "altEn": "My path · Alphabet in dark theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
+  {"file": "micamino-gustos-claro.webp", "title": "Mi camino · Gustos y hábitos", "description": "Vista de una lección futura en el mapa de aprendizaje.", "alt": "Mi camino · Gustos y hábitos en tema claro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Likes and habits", "descriptionEn": "A future lesson shown on the learning map.", "altEn": "My path · Likes and habits in light theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
+  {"file": "micamino-gustos-oscuro.webp", "title": "Mi camino · Gustos y hábitos", "description": "Vista de una lección futura en el mapa de aprendizaje.", "alt": "Mi camino · Gustos y hábitos en tema oscuro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Likes and habits", "descriptionEn": "A future lesson shown on the learning map.", "altEn": "My path · Likes and habits in dark theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
   {
     file: "14.webp",
     title: "Lección · Preséntate",
@@ -302,6 +303,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "10.webp",
+    screenKey: "repaso",
+    themeVariant: "claro",
     title: "Repaso",
     description: "Resumen de áreas que pueden requerir práctica adicional.",
     alt: "Pantalla de repaso con apartados de patrones, vocabulario y habilidades.",
@@ -309,6 +312,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "11.webp",
+    screenKey: "vocabulario",
+    themeVariant: "claro",
     title: "Vocabulario",
     description: "Consulta de palabras guardadas y formulario para añadir vocabulario.",
     alt: "Pantalla de vocabulario con búsqueda, filtros y opción para agregar palabras.",
@@ -316,6 +321,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "22.webp",
+    screenKey: "repaso",
+    themeVariant: "oscuro",
     title: "Repaso · tema oscuro",
     description: "Vista del módulo de repaso con el tema oscuro activo.",
     alt: "Módulo de repaso de Inglés Chido en tema oscuro.",
@@ -323,6 +330,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "22_1.webp",
+    screenKey: "areas-repaso",
+    themeVariant: "oscuro",
     title: "Áreas de repaso · tema oscuro",
     description: "Apartados de práctica y contenido por reforzar en tema oscuro.",
     alt: "Lista de áreas de repaso en la interfaz oscura de Inglés Chido.",
@@ -330,6 +339,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "22_2.webp",
+    screenKey: "vocabulario",
+    themeVariant: "oscuro",
     title: "Vocabulario · tema oscuro",
     description: "Consulta y práctica de vocabulario con el tema oscuro activo.",
     alt: "Pantalla de vocabulario en tema oscuro con una palabra guardada.",
@@ -337,6 +348,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "12.webp",
+    screenKey: "progreso",
+    themeVariant: "claro",
     title: "Progreso por habilidad",
     description:
       "Vista local del nivel y del estado de evidencia para distintas habilidades.",
@@ -346,6 +359,8 @@ const additionalCaptures: AelpCapture[] = [
   },
   {
     file: "22_3.webp",
+    screenKey: "progreso",
+    themeVariant: "oscuro",
     title: "Progreso por habilidad · tema oscuro",
     description: "Vista del progreso con el tema oscuro activo.",
     alt: "Progreso por habilidad en la interfaz oscura de Inglés Chido.",
@@ -435,12 +450,7 @@ export function InglesChidoCaseStudy() {
             <p><LanguageText es="Capturas del prototipo móvil actual. Selecciona una para ampliarla." en="Screenshots from the current mobile prototype. Select one to enlarge it." /></p>
           </div>
           <AelpCaptureGallery captures={captures} mobileShowcase />
-          <div className="ingles-more-screens">
-            <p className="eyebrow"><LanguageText es="MÁS PANTALLAS" en="MORE SCREENS" /></p>
-            <h3><LanguageText es="Lecciones, repaso y progreso" en="Lessons, review, and progress" /></h3>
-            <p><LanguageText es="Explora otras funciones del prototipo." en="Explore more features from the prototype." /></p>
-            <AelpCaptureGallery captures={additionalCaptures} />
-          </div>
+
         </div>
       </section>
 
