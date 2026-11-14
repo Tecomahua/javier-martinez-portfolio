@@ -5288,3 +5288,25 @@ html[data-scrolled="true"] .site-header {
 .brand-name {
   font-size: 16px !important;
 }
+
+/* Equal-width project cards on the home page. */
+@media (min-width: 769px) {
+  .projects-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .project-card-ingles .ingles-chido-home-visual { min-height: 0; }
+  .project-card-ingles .ingles-chido-card-media { height: 260px; }
+  .project-card-ingles .ingles-home-float { min-height: 48px; padding: 8px 10px; gap: 8px; }
+  .project-card-ingles .ingles-home-float strong { font-size: 10px; }
+  .project-card-ingles .ingles-home-float small { font-size: 6px; }
+  .project-card-ingles .ingles-home-check { width: 30px; height: 30px; }
+  .project-card-ingles .project-card-content { padding: 29px 31px; }
+  .project-card-ingles .project-card-title-row { margin-top: 28px; }
+  .project-card-ingles .project-card-title-row h3 { font-size: clamp(28px, 3vw, 38px); }
+  .project-card-ingles .project-summary { margin: 24px 0 29px; font-size: 13px; line-height: 1.85; }
+  .project-card-ingles .project-role { padding-top: 17px; }
+  .project-card-ingles .project-detail-link { margin-top: 19px; font-size: 11px; }
+  .project-card-ingles .project-detail-link > span { width: 29px; height: 29px; }
+}
+@media (max-width: 768px) {
+  .project-card-ingles .ingles-chido-home-visual { min-height: 0; }
+  .project-card-ingles .ingles-chido-card-media { height: 245px; }
+}

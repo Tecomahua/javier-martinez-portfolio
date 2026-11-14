@@ -35,7 +35,6 @@ export const projects: Project[] = [
     contribution:
       "Lidero la visión de producto, la experiencia y el desarrollo móvil, y defino la estrategia para convertir registros de aprendizaje en evidencias analizables.",
     tags: ["React Native", "TypeScript", "Expo"],
-    featured: true,
     overview: [
       "Inglés Chido evoluciona hacia AELP (Adaptive English Learning Platform), una plataforma de inglés basada en evidencias. Completar una actividad no demuestra dominio; intentos, respuestas y errores pueden aportar señales para evaluar dificultades y progreso.",
       "El prototipo móvil ya reúne registros y estados de aprendizaje localmente. La integración con FastAPI y PostgreSQL está en desarrollo; el procesamiento con Python y pandas, las métricas de dominio y la personalización pertenecen a etapas posteriores.",
