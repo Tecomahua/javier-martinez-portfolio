@@ -4569,10 +4569,10 @@ html[data-scrolled="true"] .site-header {
   padding: 25px 15px 21px;
   border: 1px solid var(--border);
   border-radius: 26px;
-  background: linear-gradient(145deg, color-mix(in srgb, var(--teal), transparent 91%), var(--bg-soft) 52%);
+  background: var(--surface);
+  color: var(--text);
   transition: transform .2s ease, box-shadow .2s ease;
 }
-.mobile-showcase-oscuro .aelp-gallery-item { background: linear-gradient(145deg, #112b38, #08141f 70%); border-color: #244657; }
 .mobile-showcase-gallery .aelp-gallery-item:hover { transform: translateY(-4px); box-shadow: 0 20px 45px rgb(0 0 0 / 12%); }
 .mobile-showcase-gallery .mobile-showcase-phone {
   position: relative;
@@ -4597,9 +4597,8 @@ html[data-scrolled="true"] .site-header {
 }
 .mobile-showcase-gallery .mobile-showcase-phone img { border-radius: 25px; }
 .mobile-showcase-gallery .aelp-gallery-item > div { width: min(100%, 240px); }
-.mobile-showcase-gallery .aelp-gallery-item h3 { font-size: 16px; }
-.mobile-showcase-oscuro .aelp-gallery-item h3 { color: #f1f8fb; }
-.mobile-showcase-oscuro .aelp-gallery-item > div > p { color: #aec5cf; }
+.mobile-showcase-gallery .aelp-gallery-item h3 { color: var(--text); font-size: 16px; }
+.mobile-showcase-gallery .aelp-gallery-item > div > p { color: var(--muted); }
 @media (max-width: 600px) {
   .mobile-showcase-toolbar { align-items: stretch; flex-direction: column; padding: 17px; }
   .mobile-showcase-switch { width: fit-content; }

@@ -162,7 +162,7 @@ export function AelpCaptureGallery({
         </div>
       )}
 
-      <div className={`aelp-gallery${isDesktop ? " aelp-gallery-desktop" : ""}${mobileShowcase ? ` mobile-showcase-gallery mobile-showcase-${showcaseTheme}` : ""}`}>
+      <div className={`aelp-gallery${isDesktop ? " aelp-gallery-desktop" : ""}${mobileShowcase ? " mobile-showcase-gallery" : ""}`}>
         {filteredCaptures.map((capture) => (
           <article className="aelp-gallery-item" key={capture.file}>
             <button
