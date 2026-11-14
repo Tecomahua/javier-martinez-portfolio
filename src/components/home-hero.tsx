@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, ArrowUpRight, Github, Linkedin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Download, Github, Linkedin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { LanguageText, useLanguage } from "@/components/language-provider";
 import { getPublicAssetPath } from "@/lib/site-url";
@@ -46,6 +46,12 @@ export function HomeHero() {
             </a>
             <a className={`button ${styles.secondary}`} href="#contacto">
               <LanguageText es="Contactarme" en="Contact me" />
+            </a>
+            <a className={`button ${styles.secondary}`} href={getPublicAssetPath(`/cv/${language === "en" ? "javier-martinez-data-analyst-en.pdf" : "javier-martinez-analista-de-datos-es.pdf"}`)} download>
+              <LanguageText es="Descargar CV" en="Download Resume" /> <Download size={16} aria-hidden="true" />
+            </a>
+            <a className={`button ${styles.secondary}`} href="#certificados">
+              <LanguageText es="Certificados" en="Certificates" />
             </a>
           </div>
 
