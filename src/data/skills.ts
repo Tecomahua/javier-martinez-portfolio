@@ -14,8 +14,8 @@ export const skillGroups = [
   {
     number: "03",
     title: "Excel, Power BI y herramientas",
-    note: "Excel y Power BI: en formación, sin caso publicado",
-    items: ["Excel (en formación)", "Power BI (en formación)", "Jupyter Notebook", "Git", "GitHub"],
+    note: "Análisis y visualización de datos",
+    items: ["Excel", "Power BI", "Jupyter Notebook", "Git", "GitHub"],
   },
 ] as const;
 
@@ -32,7 +32,7 @@ export const skillGroupsEnglish = [
   },
   {
     title: "Excel, Power BI and tools",
-    note: "Excel and Power BI: learning, no published case yet",
-    items: ["Excel (learning)", "Power BI (learning)", "Jupyter Notebook", "Git", "GitHub"],
+    note: "Data analysis and visualization",
+    items: ["Excel", "Power BI", "Jupyter Notebook", "Git", "GitHub"],
   },
 ] as const;

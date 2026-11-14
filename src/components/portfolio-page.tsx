@@ -46,10 +46,10 @@ export function PortfolioPage() {
             </div>
             <div className="about-facts">
               <p>
-                <LanguageText es="Soy estudiante de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Orizaba. Me interesa convertir datos en información útil para entender problemas, comparar alternativas y comunicar decisiones con sus límites." en="I study Computer Systems Engineering at the Orizaba Institute of Technology. I am interested in turning data into useful information to understand problems, compare options, and communicate decisions with their limits." />
+                <LanguageText es="Estoy en la etapa final de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Orizaba. Me interesa convertir datos en información útil para entender problemas, comparar alternativas y comunicar decisiones con sus límites." en="I am in the final stage of my Computer Systems Engineering degree at the Orizaba Institute of Technology. I am interested in turning data into useful information to understand problems, compare options, and communicate decisions with their limits." />
               </p>
               <p>
-                <LanguageText es="Busco una residencia como Data Analyst Intern para colaborar en limpieza, análisis y visualización de datos. Mi base técnica incluye Python, pandas y SQL; Excel y Power BI forman parte de mi formación actual." en="I seek a Data Analyst Intern placement focused on data cleaning, analysis, and visualization. My technical foundation includes Python, pandas, and SQL; Excel and Power BI are part of my current learning path." />
+                <LanguageText es="Busco realizar mis prácticas profesionales como analista de datos. Trabajo con SQL, Python, pandas, Excel y Power BI para limpiar, analizar y visualizar información." en="I seek a data analyst internship. I work with SQL, Python, pandas, Excel, and Power BI to clean, analyze, and visualize information." />
               </p>
             </div>
           </div>
@@ -151,7 +151,7 @@ export function PortfolioPage() {
               </h2>
             </div>
             <p className="section-aside">
-              <LanguageText es="Herramientas de análisis y desarrollo que utilizo o estoy aprendiendo, con su nivel de evidencia indicado." en="Analysis and development tools I use or am learning, with their evidence level indicated." />
+              <LanguageText es="Herramientas que utilizo para preparar, analizar y visualizar datos." en="Tools I use to prepare, analyze, and visualize data." />
             </p>
           </div>
           <SkillsExplorer />
@@ -178,7 +178,7 @@ export function PortfolioPage() {
               </span>
             </h2>
             <p>
-              <LanguageText es="Busco una residencia profesional como Data Analyst Intern desde enero de 2027. Puedo apoyar la preparación de datos, consultas SQL, análisis con Python/pandas y comunicación clara de hallazgos y límites." en="I am seeking a Data Analyst Intern placement starting in January 2027. I can support data preparation, SQL queries, Python/pandas analysis, and clear communication of findings and limitations." />
+              <LanguageText es="Busco prácticas profesionales como analista de datos a partir de enero de 2027. Puedo apoyar la preparación de datos, consultas SQL, análisis con Python y pandas, y visualización con Excel y Power BI." en="I seek a data analyst internship starting in January 2027. I can support data preparation, SQL queries, analysis with Python and pandas, and visualization with Excel and Power BI." />
             </p>
             <div className="contact-actions">
               <a

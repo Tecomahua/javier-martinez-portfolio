@@ -11,7 +11,7 @@ export function SiteFooter() {
           <Link className="footer-name" href="/#inicio">
             © {new Date().getFullYear()} Javier Martínez
           </Link>
-          <p>Data Analyst Intern · SQL · Python · pandas</p>
+          <p><LanguageText es="Analista de datos" en="Data Analyst" /></p>
         </div>
         <div className="footer-links">
           <a
