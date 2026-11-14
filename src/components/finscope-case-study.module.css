@@ -94,6 +94,7 @@
 .methodNarrative summary::after { content: "+"; margin-left: .7rem; font-size: 1rem; }
 .methodNarrative[open] summary::after { content: "–"; }
 .methodNarrative > div { padding-top: .75rem; }
+.methodIntro { margin: 0; }
 .findings { display: grid; gap: 1rem; }
 .findings article { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; padding: 1.6rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }
 .findings article > span { color: var(--fs-accent); font: .9rem var(--mono-font); }
