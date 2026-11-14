@@ -23,34 +23,32 @@ export const projects: Project[] = [
     slug: "ingles-chido",
     number: "01",
     name: "Inglés Chido",
-    category: "Adaptive English Learning Platform (AELP)",
+    category: "Educational Data Science & Learning Analytics",
     role: "Fundador y desarrollador",
     status: "En desarrollo",
     summary:
-      "Adaptive English Learning Platform (AELP): una plataforma móvil para aprender inglés que conecta la práctica diaria con evidencias de progreso.",
+      "Iniciativa de analítica educativa que desarrolla AELP: el prototipo de Inglés Chido registra intentos, respuestas y errores para sentar las bases de futuros indicadores de aprendizaje y práctica personalizada.",
     problem:
       "Completar actividades no demuestra, por sí solo, que un estudiante haya aprendido. El progreso necesita apoyarse en evidencias a lo largo del tiempo.",
     solution:
       "Una experiencia móvil progresiva con ruta visual, lecciones y registro local de respuestas, errores y repasos.",
     contribution:
-      "Fundé el proyecto y trabajo en su visión de producto, la experiencia de aprendizaje y el desarrollo de la aplicación móvil.",
+      "Lidero la visión de producto, la experiencia y el desarrollo móvil, y defino la estrategia para convertir registros de aprendizaje en evidencias analizables.",
     tags: ["React Native", "TypeScript", "Expo"],
     featured: true,
     overview: [
-      "Inglés Chido — Adaptive English Learning Platform (AELP) — es una plataforma móvil para aprender inglés. Su principio central distingue entre terminar una actividad y demostrar dominio: el progreso debe construirse con distintas evidencias y en el tiempo.",
-      "La aplicación actual es un prototipo navegable con estado y datos en memoria. FastAPI, PostgreSQL y Alembic forman parte de la arquitectura de backend en desarrollo, pero todavía no respaldan el flujo principal.",
+      "Inglés Chido evoluciona hacia AELP (Adaptive English Learning Platform), una plataforma de inglés basada en evidencias. Completar una actividad no demuestra dominio; intentos, respuestas y errores pueden aportar señales para evaluar dificultades y progreso.",
+      "El prototipo móvil ya reúne registros y estados de aprendizaje localmente. La integración con FastAPI y PostgreSQL está en desarrollo; el procesamiento con Python y pandas, las métricas de dominio y la personalización pertenecen a etapas posteriores.",
     ],
     implemented: [
-      "Onboarding, bienvenida y perfil configurados con estado local.",
-      "Ruta visual de aprendizaje, lecciones y estados de avance administrados localmente.",
-      "Registro local de intentos, respuestas, errores, palabras y necesidades de repaso.",
-      "Módulos de repaso, vocabulario, progreso y evaluación local de demostración.",
+      "Prototipo móvil A1 con onboarding, ruta visual y lecciones iniciales.",
+      "Seguimiento local del avance y registro de intentos, respuestas, errores y necesidades de repaso.",
+      "Módulos de repaso, vocabulario y progreso basados en estado local.",
     ],
     planned: [
-      "Unificar evidencias entre habilidades y detectar debilidades a partir de errores repetidos.",
-      "Adaptar sesiones de práctica y presentar explicaciones claras del progreso.",
-      "Migrar gradualmente la persistencia local a servicios con API y base de datos.",
-      "Explorar Learning Analytics, Machine Learning y asistencia con modelos de lenguaje. No hay modelos predictivos entrenados ni integraciones productivas de LLM afirmadas aquí.",
+      "Integrar los registros locales con FastAPI y PostgreSQL para persistir evidencias entre sesiones.",
+      "Procesar datos con Python y pandas y definir métricas de dominio y progreso por tema.",
+      "Identificar patrones de dificultad, explorar modelos predictivos y recomendar práctica adaptativa; aún no hay modelos entrenados ni recomendaciones en producción.",
     ],
   },
   {
