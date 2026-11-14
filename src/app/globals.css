@@ -4206,6 +4206,21 @@ html[data-scrolled="true"] .site-header {
     radial-gradient(ellipse at 52% 75%, rgb(28 95 183 / 24%), transparent 51%),
     linear-gradient(135deg, #0b1527, #0d1b31 58%, #091322);
 }
+:root[data-theme="light"] .project-card-ingles .project-visual {
+  background:
+    radial-gradient(ellipse at 52% 75%, rgb(96 165 250 / 18%), transparent 51%),
+    linear-gradient(135deg, #f7fbff, #eaf4ff 58%, #f8fbff);
+}
+:root[data-theme="light"] .project-card-ingles .ingles-home-float {
+  border-color: rgb(14 116 144 / 28%);
+  background: rgb(255 255 255 / 88%);
+  color: #10233f;
+  box-shadow: 0 14px 32px rgb(37 99 235 / 12%);
+}
+:root[data-theme="light"] .project-card-ingles .ingles-home-float strong,
+:root[data-theme="light"] .project-card-ingles .ingles-home-float small {
+  color: #36506f;
+}
 .ingles-chido-home-visual {
   position: relative;
   display: grid;
