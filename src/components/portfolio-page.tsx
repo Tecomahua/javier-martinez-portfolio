@@ -1,6 +1,8 @@
 import Image from "next/image";
 import {
   ArrowUpRight,
+  Eye,
+  FileBadge,
   ChartNoAxesCombined,
   Code2,
   Github,
@@ -166,12 +168,18 @@ export function PortfolioPage() {
           </div>
           <div className="certificates-grid" data-reveal>
             {[
-              ["Excel Basics for Data Analysis · IBM / Coursera", "/certificates/coursera-1a3df3oetj0j.pdf"],
-              ["Introduction to Data Analytics · IBM / Coursera", "/certificates/coursera-4tc1uninet65.pdf"],
-              ["Data Visualization and Dashboards with Excel and Cognos · IBM / Coursera", "/certificates/coursera-k311rbbqbk98.pdf"],
-              ["Creación de dashboards interactivos en Excel utilizando Python", "/certificates/dashboards-python-excel.pdf"],
-              ["SQL básico", "/certificates/sql-basic-certificate.pdf"],
-            ].map(([label, href]) => <a className="certificate-link" href={getPublicAssetPath(href)} target="_blank" rel="noreferrer" key={href}>{label} ↗</a>)}
+              { title: "Excel Basics for Data Analysis", issuer: "IBM · Coursera", href: "/certificates/coursera-1a3df3oetj0j.pdf" },
+              { title: "Introduction to Data Analytics", issuer: "IBM · Coursera", href: "/certificates/coursera-4tc1uninet65.pdf" },
+              { title: "Data Visualization and Dashboards with Excel and Cognos", issuer: "IBM · Coursera", href: "/certificates/coursera-k311rbbqbk98.pdf" },
+              { title: "Creación de dashboards interactivos en Excel utilizando Python", issuer: "Certificado de formación", href: "/certificates/dashboards-python-excel.pdf" },
+              { title: "SQL básico", issuer: "Certificado de formación", href: "/certificates/sql-basic-certificate.pdf" },
+            ].map(({ title, issuer, href }) => (
+              <article className="certificate-card" key={href}>
+                <span className="certificate-icon" aria-hidden="true"><FileBadge size={21} /></span>
+                <div className="certificate-card-copy"><span>{issuer}</span><h3>{title}</h3></div>
+                <a className="certificate-view-link" href={getPublicAssetPath(href)} target="_blank" rel="noreferrer" aria-label={`Ver certificado: ${title}`}><Eye size={16} aria-hidden="true" /><LanguageText es="Ver certificado" en="View certificate" /><ArrowUpRight size={15} aria-hidden="true" /></a>
+              </article>
+            ))}
           </div>
         </div>
       </section>
