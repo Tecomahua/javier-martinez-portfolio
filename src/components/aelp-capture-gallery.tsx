@@ -20,6 +20,8 @@ export type AelpCapture = {
   categoryEn?: string;
   width?: number;
   height?: number;
+  screenKey?: string;
+  themeVariant?: "claro" | "oscuro";
 };
 
 function getCaptureCategory(capture: AelpCapture, language: "es" | "en") {
@@ -51,8 +53,9 @@ export function AelpCaptureGallery({
     if (!mobileShowcase) return captures;
     const chosen = new Map<string, AelpCapture>();
     for (const capture of captures) {
-      const key = capture.file.replace(/-(claro|oscuro)\.jpeg$/, "");
-      if (!chosen.has(key) || capture.file.endsWith(`-${showcaseTheme}.jpeg`)) {
+      const key = capture.screenKey ?? capture.file.replace(/-(claro|oscuro)\.(jpeg|webp)$/, "");
+      const theme = capture.themeVariant ?? capture.file.match(/-(claro|oscuro)\.(jpeg|webp)$/)?.[1];
+      if (!chosen.has(key) || theme === showcaseTheme) {
         chosen.set(key, capture);
       }
     }
@@ -123,7 +126,7 @@ export function AelpCaptureGallery({
         <div className="mobile-showcase-toolbar">
           <div>
             <strong>{language === "es" ? "Explora la app" : "Explore the app"}</strong>
-            <span>{language === "es" ? "Cambia el tema para ver cada pantalla como en tu teléfono." : "Switch themes to see each screen as it appears on your phone."}</span>
+            <span>{language === "es" ? "Explora todas las pantallas y alterna el tema cuando haya ambas versiones." : "Explore every screen and switch themes where both versions are available."}</span>
           </div>
           <div className="mobile-showcase-switch" role="group" aria-label={language === "es" ? "Tema de las capturas" : "Screenshot theme"}>
             <button type="button" aria-pressed={showcaseTheme === "claro"} onClick={() => { setShowcaseTheme("claro"); setSelected(null); }}><Sun size={16} />{language === "es" ? "Claro" : "Light"}</button>
