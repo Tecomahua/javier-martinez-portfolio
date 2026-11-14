@@ -388,8 +388,6 @@ html[data-scrolled="true"] .site-header {
 .about-facts p + p {
   margin-top: 16px;
 }
-.applied-experience { margin-top: 61px; }
-.applied-experience .principles-grid { margin-top: 20px; }
 .principles-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -571,36 +569,6 @@ html[data-scrolled="true"] .site-header {
   color: var(--muted);
   font-size: 13px;
   line-height: 1.85;
-}
-.project-evidence {
-  display: grid;
-  gap: 12px;
-  margin: 0 0 22px;
-}
-.project-evidence > div {
-  display: grid;
-  grid-template-columns: minmax(105px, 0.35fr) 1fr;
-  gap: 12px;
-}
-.project-evidence dt {
-  color: var(--muted-2);
-  font: 9px/1.6 var(--mono-font);
-  letter-spacing: 0.04em;
-}
-.project-evidence dd {
-  margin: 0;
-  color: var(--muted);
-  font-size: 11px;
-  line-height: 1.55;
-}
-.project-tools {
-  display: block;
-  margin-top: 4px;
-  color: var(--teal);
-  font-size: 10px;
-}
-@media (max-width: 520px) {
-  .project-evidence > div { grid-template-columns: 1fr; gap: 3px; }
 }
 .project-role {
   margin-top: auto;

@@ -46,48 +46,30 @@ export function PortfolioPage() {
             </div>
             <div className="about-facts">
               <p>
-                <LanguageText es="Soy estudiante de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Orizaba. En SPA Orizaba preparé datos de ENIGH, DENUE e ITER con Python y pandas para comparar municipios y zonas; en STI-NEM apoyé la revisión de datos relacionales y su integración con interfaces docentes." en="I study Computer Systems Engineering at the Orizaba Institute of Technology. In SPA Orizaba, I prepared ENIGH, DENUE, and ITER data with Python and pandas to compare municipalities and areas; in STI-NEM, I supported relational data checks and integration with teacher interfaces." />
+                <LanguageText es="Soy estudiante de Ingeniería en Sistemas Computacionales en el Instituto Tecnológico de Orizaba. Me interesa convertir datos en información útil para entender problemas, comparar alternativas y comunicar decisiones con sus límites." en="I study Computer Systems Engineering at the Orizaba Institute of Technology. I am interested in turning data into useful information to understand problems, compare options, and communicate decisions with their limits." />
               </p>
               <p>
-                <LanguageText es="Busco una residencia como Data Analyst Intern para trabajar en limpieza, análisis y comunicación de datos. Utilizo SQL en proyectos de integración; estudio Excel y Power BI y todavía no publico casos que demuestren su uso." en="I seek a Data Analyst Intern placement focused on data cleaning, analysis, and communication. I use SQL in integration projects; I am learning Excel and Power BI and have not yet published cases demonstrating them." />
+                <LanguageText es="Busco una residencia como Data Analyst Intern para colaborar en limpieza, análisis y visualización de datos. Mi base técnica incluye Python, pandas y SQL; Excel y Power BI forman parte de mi formación actual." en="I seek a Data Analyst Intern placement focused on data cleaning, analysis, and visualization. My technical foundation includes Python, pandas, and SQL; Excel and Power BI are part of my current learning path." />
               </p>
             </div>
           </div>
-          <section className="applied-experience" aria-labelledby="applied-experience-title">
-            <p className="eyebrow" id="applied-experience-title"><LanguageText es="EXPERIENCIA APLICADA · PROYECTOS ACADÉMICOS Y PERSONALES" en="APPLIED EXPERIENCE · ACADEMIC AND PERSONAL PROJECTS" /></p>
-            <div className="principles-grid">
+          <div className="principles-grid">
             <article className="principle" data-reveal>
-              <div className="principle-top">
-                <Code2 size={23} strokeWidth={1.3} />
-                <span>01</span>
-              </div>
-              <h3><LanguageText es="Análisis comercial" en="Commercial analysis" /></h3>
-              <p>
-                <LanguageText es="SPA Orizaba: limpieza de fuentes públicas, comparación territorial y recomendación para trabajo de campo." en="SPA Orizaba: public data cleaning, geographic comparison, and a recommendation for fieldwork." />
-              </p>
+              <div className="principle-top"><Code2 size={23} strokeWidth={1.3} /><span>01</span></div>
+              <h3><LanguageText es="Preparación de datos" en="Data preparation" /></h3>
+              <p><LanguageText es="Organizar, limpiar y transformar fuentes para responder preguntas concretas." en="Organizing, cleaning, and transforming sources to answer concrete questions." /></p>
             </article>
             <article className="principle" data-reveal>
-              <div className="principle-top">
-                <ChartNoAxesCombined size={23} strokeWidth={1.3} />
-                <span>02</span>
-              </div>
-              <h3><LanguageText es="Analítica educativa" en="Learning analytics" /></h3>
-              <p>
-                <LanguageText es="Inglés Chido: registros locales y un análisis reproducible de datos sintéticos, aún sin integración entre ambos." en="Inglés Chido: local records and a reproducible synthetic-data analysis, not yet integrated." />
-              </p>
+              <div className="principle-top"><ChartNoAxesCombined size={23} strokeWidth={1.3} /><span>02</span></div>
+              <h3><LanguageText es="Análisis e indicadores" en="Analysis and indicators" /></h3>
+              <p><LanguageText es="Comparar datos con métricas comprensibles y reconocer los límites de cada fuente." en="Comparing data with clear metrics and recognizing each source's limits." /></p>
             </article>
             <article className="principle" data-reveal>
-              <div className="principle-top">
-                <Target size={23} strokeWidth={1.3} />
-                <span>03</span>
-              </div>
-              <h3><LanguageText es="Integración en equipo" en="Team integration" /></h3>
-              <p>
-                <LanguageText es="STI-NEM: frontend docente y apoyo en contratos API y validación relacional sobre una copia aislada." en="STI-NEM: teacher frontend and support with API contracts and relational checks on an isolated copy." />
-              </p>
+              <div className="principle-top"><Target size={23} strokeWidth={1.3} /><span>03</span></div>
+              <h3><LanguageText es="Comunicación de hallazgos" en="Communicating findings" /></h3>
+              <p><LanguageText es="Explicar resultados de forma clara para apoyar decisiones e investigaciones posteriores." en="Explaining results clearly to support decisions and further research." /></p>
             </article>
-            </div>
-          </section>
+          </div>
         </div>
       </section>
 
@@ -99,13 +81,13 @@ export function PortfolioPage() {
                 <span>02</span> / <LanguageText es="TRABAJO SELECCIONADO" en="SELECTED WORK" />
               </p>
               <h2>
-                <LanguageText es="Casos con" en="Cases with" />
+                <LanguageText es="Proyectos con" en="Projects with" />
                 <br />
-                <em><LanguageText es="evidencia." en="evidence." /></em>
+                <em><LanguageText es="propósito." en="purpose." /></em>
               </h2>
             </div>
             <p className="section-aside">
-              <LanguageText es="Cada caso resume el problema, el método, las herramientas, el hallazgo y qué evidencia permite comprobarlo." en="Each case summarizes the problem, method, tools, finding, and evidence available to check it." />
+              <LanguageText es="Explora el contexto, mi contribución y los detalles técnicos de cada proyecto." en="Explore the context, my contribution, and the technical details of each project." />
             </p>
           </div>
           <div className="projects-grid">
@@ -169,7 +151,7 @@ export function PortfolioPage() {
               </h2>
             </div>
             <p className="section-aside">
-              <LanguageText es="Separo herramientas aplicadas en proyectos de Excel y Power BI, que siguen en formación y aún requieren un caso publicado." en="I separate tools used in projects from Excel and Power BI, which I am still learning and have yet to demonstrate in a published case." />
+              <LanguageText es="Herramientas de análisis y desarrollo que utilizo o estoy aprendiendo, con su nivel de evidencia indicado." en="Analysis and development tools I use or am learning, with their evidence level indicated." />
             </p>
           </div>
           <SkillsExplorer />
