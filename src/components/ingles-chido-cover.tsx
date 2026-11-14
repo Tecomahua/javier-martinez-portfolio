@@ -7,21 +7,21 @@ import { getPublicAssetPath } from "@/lib/site-url";
 
 const detailScreens = [
   {
-    file: "18.webp",
-    alt: "Lección de Inglés Chido para escuchar y practicar las vocales.",
-    altEn: "Inglés Chido vowel lesson for listening and pronunciation practice.",
+    file: "onboarding2-claro.jpeg",
+    alt: "Selección del objetivo de aprendizaje de Inglés Chido.",
+    altEn: "Choosing a learning goal in Inglés Chido.",
     className: "ingles-detail-screen-left",
   },
   {
-    file: "2.webp",
+    file: "pantalla-principal-claro.jpeg",
     alt: "Bienvenida de Inglés Chido con su identidad visual y accesos para comenzar.",
     altEn: "Inglés Chido welcome screen with its visual identity and ways to get started.",
     className: "ingles-detail-screen-main",
   },
   {
-    file: "11.webp",
-    alt: "Pantalla de vocabulario de Inglés Chido.",
-    altEn: "Inglés Chido vocabulary screen.",
+    file: "micamino-claro.jpeg",
+    alt: "Ruta de aprendizaje Mi camino de Inglés Chido.",
+    altEn: "The Inglés Chido learning path.",
     className: "ingles-detail-screen-right",
   },
 ];
@@ -50,7 +50,7 @@ export function InglesChidoCover({ variant = "home" }: { variant?: "home" | "det
           <div className="ingles-chido-card-media" data-interactive>
             <div className="ingles-chido-card-screen">
               <Image
-                src={getPublicAssetPath("/images/ingles-chido/2.webp")}
+                src={getPublicAssetPath("/images/ingles-chido/pantalla-principal-claro.jpeg")}
                 alt={isEnglish ? "Inglés Chido welcome screen with options to get started or sign in" : "Pantalla de bienvenida de Inglés Chido con opciones para empezar o iniciar sesión"}
                 fill
                 sizes="(max-width: 700px) 42vw, (max-width: 1100px) 23vw, 250px"
