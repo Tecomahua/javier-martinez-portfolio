@@ -41,31 +41,16 @@ export const projectEnglish: Record<string, Partial<Project>> = {
     planned: ["Expand and validate ATM location sources and update official data."],
   },
   "tutor-ia-nem": {
-    category: "Educational Technology · AI Tutoring",
-    role: "Frontend developer · teacher module",
+    category: "Educational technology · Data integration",
+    role: "Teacher frontend · Data integration support",
     status: "Academic team project",
-    summary:
-      "An AI tutor for fourth-grade students, aligned with Mexico’s New Mexican School curriculum and designed to generate exercises that support learning.",
-    problem:
-      "Fourth-grade students need guided practice with curriculum content. STI-NEM proposes an intelligent tutor that offers exercises and supports their learning.",
-    solution:
-      "A web system with teacher, student, and administrator modules. Its initial goal is to generate AI-assisted exercises aligned with the New Mexican School curriculum.",
-    contribution:
-      "I developed the teacher-module screens, including the dashboard, class-management, and exercise views. My contribution focused on the teacher interface within the team building the broader system.",
-    overview: [
-      "STI-NEM is an AI-assisted intelligent tutoring system designed for fourth-grade students. Its initial goal is to generate exercises aligned with Mexico’s New Mexican School curriculum and help students learn as they solve them. The technical documentation describes student, teacher, director, and administrator roles, each with specific functions.",
-      "The work was completed as a team as part of a master's thesis project at Mexico's National Institute of Technology.",
-      "Available screenshots document the views. The frontend and backend repositories are not public or accessible from this environment, so I could not verify dependencies, routes, services, or a live API connection.",
-    ],
-    implemented: [
-      "Teacher-module screens: dashboard, class management, and views related to students and exercises.",
-      "An exercise criteria interface aligned with the curriculum. Screenshots show the UI but do not by themselves verify AI generation.",
-    ],
-    planned: [
-      "Verify contracts, routes, and technologies against the sti-nem-front repository when the code is accessible.",
-      "Confirm which workflows use an API, mocks, or services from the sti-nem-back backend.",
-      "Validate exercise generation, authentication, and administrative profiles.",
-    ],
+    summary: "A team-built education system using PostgreSQL, Prisma, NestJS, and Next.js; my work combined teacher frontend development with data integration and validation support.",
+    problem: "The system needs to connect educational interfaces to consistent relational data and backend services.",
+    solution: "A Next.js frontend, NestJS API, and PostgreSQL through Prisma, with integrity checks on an isolated copy.",
+    contribution: "I primarily developed teacher screens and supported services, adapters, and the database connection review alongside the team.",
+    overview: ["The project log records 52 tables, 26,805 records audited, and 99 foreign keys validated on an isolated copy; these are not production metrics.", "A team social-service project connected to a master's thesis at Mexico's National Technological Institute."],
+    implemented: ["Teacher screens and services with adapters for API contracts.", "Integrity review, authorized Prisma migration, and API availability and route protection checks documented in the log."],
+    planned: ["Complete the student tutoring adapter and partial academic data.", "Configure templates and test the generation worker on an isolated copy."],
   },
   "spa-orizaba": {
     category: "Data Science · Commercial analysis",
