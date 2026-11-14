@@ -25,7 +25,7 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="project-card-title-row">
           {reserved ? <h3><LanguageText es={project.name} en={projectText(project, "name")} /></h3> : (
             <div className="project-title-link">
-              <h3><LanguageText es={project.name} en={projectText(project, "name")} /></h3>
+              <h3 id={`project-title-${project.slug}`}><LanguageText es={project.name} en={projectText(project, "name")} /></h3>
               <ArrowUpRight size={25} />
             </div>
           )}
@@ -79,7 +79,7 @@ export function ProjectCard({ project }: { project: Project }) {
 
   return (
     <Link
-      aria-label={`Conocer el proyecto ${project.name}`}
+      aria-labelledby={`project-title-${project.slug}`}
       className={className}
       data-reveal
       data-interactive
