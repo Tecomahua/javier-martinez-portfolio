@@ -11,7 +11,7 @@ export function LearningAnalysis() {
   return (
     <section className="ingles-case-analysis" id="analisis" aria-labelledby="analysis-title">
       <div className="shell">
-        <p className="eyebrow"><span>04</span> / <LanguageText es="ANÁLISIS REPRODUCIBLE" en="REPRODUCIBLE ANALYSIS" /></p>
+        <p className="eyebrow"><span>05</span> / <LanguageText es="ANÁLISIS REPRODUCIBLE" en="REPRODUCIBLE ANALYSIS" /></p>
         <div className="ingles-case-section-heading">
           <h2 id="analysis-title"><LanguageText es="De intentos a preguntas." en="From attempts to questions." /></h2>
           <p><LanguageText es="Ejemplo independiente con datos sintéticos: 24 intentos de cuatro escenarios ficticios, no estudiantes reales ni datos de la app." en="Independent example using synthetic data: 24 attempts from four fictional scenarios, not real learners or app data." /></p>
