@@ -664,6 +664,11 @@ html[data-scrolled="true"] .site-header {
   border-bottom: 0;
   border-left: 1px solid var(--border);
 }
+.project-card-spa .project-visual {
+  height: auto;
+  min-height: 310px;
+  padding: 16px 12px;
+}
 .project-card-reserved .project-visual {
   background: var(--bg-soft);
 }

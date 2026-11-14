@@ -11,7 +11,7 @@ import { projectText } from "@/data/project-translations";
 
 export function ProjectCard({ project }: { project: Project }) {
   const reserved = project.slug === "proximo-proyecto";
-  const className = `project-card${project.featured ? " project-card-featured" : ""}${project.slug === "ingles-chido" ? " project-card-ingles" : ""}${reserved ? " project-card-reserved" : ""}`;
+  const className = `project-card${project.featured ? " project-card-featured" : ""}${project.slug === "ingles-chido" ? " project-card-ingles" : ""}${project.slug === "spa-orizaba" ? " project-card-spa" : ""}${reserved ? " project-card-reserved" : ""}`;
   const content = (
     <>
       <div className="project-card-content">

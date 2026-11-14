@@ -12,10 +12,10 @@ export function SpaOrizabaCover() {
       </div>
       <div className={styles.coverImage}>
         <Image
-          src={getPublicAssetPath("/images/spa-orizaba/regional-opportunity.jpg")}
+          src={getPublicAssetPath("/images/spa-orizaba/portada-orientacion-regional.webp")}
           alt="Índice regional de oportunidad para instalar un SPA: Orizaba obtiene 78.8 puntos y supera a los municipios comparados."
-          width={1536}
-          height={847}
+          width={1619}
+          height={971}
           sizes="(max-width: 700px) 90vw, (max-width: 1100px) 45vw, 520px"
           unoptimized
         />
