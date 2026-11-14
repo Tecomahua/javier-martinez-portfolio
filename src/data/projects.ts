@@ -9,9 +9,6 @@ export type Project = {
   problem: string;
   solution: string;
   contribution: string;
-  method: string;
-  finding: string;
-  evidence: string;
   tags: string[];
   techStack?: string[];
   featured?: boolean;
@@ -37,9 +34,6 @@ export const projects: Project[] = [
       "Una comparación regional y por zonas que integra datos económicos, demográficos y de establecimientos en indicadores y visualizaciones para orientar la siguiente investigación de campo.",
     contribution:
       "Lideré el trabajo técnico: localicé, limpié, transformé e integré las fuentes de datos; preparé indicadores y generé los insumos para el storytelling y la comunicación del equipo.",
-    method: "Limpieza y cruce de ENIGH, DENUE e ITER con Python/pandas; comparación regional y por zonas.",
-    finding: "El informe priorizó el Centro de Orizaba para una visita de campo, sin inferir ventas ni demanda comprobada.",
-    evidence: "Visualizaciones del informe visibles; repositorio privado. El score 77.4/100 no se reproduce con el código del proyecto.",
     tags: ["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"],
     overview: [
       "Proyecto académico de ciencia de datos para evaluar si Orizaba ofrecía señales favorables para un SPA mixto y accesible, y para decidir dónde iniciar la búsqueda de un local.",
@@ -69,9 +63,6 @@ export const projects: Project[] = [
       "Una experiencia móvil progresiva con ruta visual, lecciones y registro local de respuestas, errores y repasos.",
     contribution:
       "Lidero la visión de producto, la experiencia y el desarrollo móvil, y defino la estrategia para convertir registros de aprendizaje en evidencias analizables.",
-    method: "Registro local de aprendizaje; limpieza y agrupación con Python/pandas en un ejercicio sintético independiente.",
-    finding: "El ejemplo reproducible procesa 24 intentos sintéticos; todavía no mide el dominio de estudiantes reales.",
-    evidence: "Código, datos sintéticos y pruebas públicas; integración analítica con la app pendiente.",
     tags: ["React Native", "TypeScript", "Expo"],
     overview: [
       "Inglés Chido evoluciona hacia AELP (Adaptive English Learning Platform), una plataforma de inglés basada en evidencias. Completar una actividad no demuestra dominio; intentos, respuestas y errores pueden aportar señales para evaluar dificultades y progreso.",
@@ -99,9 +90,6 @@ export const projects: Project[] = [
     problem: "Los conteos agregados de infraestructura son difíciles de explorar territorialmente y no describen por sí solos el acceso efectivo.",
     solution: "Un dashboard con filtros municipales, mapa por entidad, tasas por cada 10,000 adultos y contexto metodológico.",
     contribution: "Preparación de datos, diseño de indicadores y desarrollo de la experiencia interactiva.",
-    method: "Conteos CNBV y tasas por 10,000 adultos; límites INEGI y puntos OSM para la exploración territorial.",
-    finding: "En las capturas, Álvaro Obregón registra 2.49 sucursales por 10,000 adultos frente a 2.12 en CDMX.",
-    evidence: "Capturas y prototipo inicial público; el dashboard nacional requiere acceso privado.",
     tags: ["Python", "SQL", "CNBV", "INEGI", "OpenStreetMap"],
     overview: ["El proyecto analiza infraestructura financiera en 2,475 municipios identificados, con corte CNBV a diciembre de 2025."],
     implemented: ["Mapa estatal y filtros municipales.", "Indicadores por cada 10,000 adultos y puntos de cajeros de OpenStreetMap."],
@@ -118,9 +106,6 @@ export const projects: Project[] = [
     problem: "El sistema necesita conectar interfaces educativas con datos relacionales consistentes y servicios de backend.",
     solution: "Una arquitectura con frontend Next.js, API NestJS y PostgreSQL mediante Prisma, con revisión de integridad en una copia aislada.",
     contribution: "Desarrollé principalmente pantallas docentes y apoyé los servicios, adaptadores y la revisión de conexión de base de datos junto al equipo.",
-    method: "Integración de interfaces y contratos API; revisión de integridad relacional en una copia aislada.",
-    finding: "La bitácora del equipo registra 52 tablas y 99 claves foráneas validadas; no son métricas de producción.",
-    evidence: "Bitácora del proyecto; falta una auditoría independiente publicada.",
     tags: ["SQL", "PostgreSQL", "Integración de datos", "Prisma", "NestJS"],
     techStack: ["PostgreSQL 18", "Prisma", "NestJS", "Next.js", "TypeScript"],
     overview: ["La bitácora registra 52 tablas, 26,805 registros auditados y 99 claves foráneas validadas en una copia aislada; no son métricas de producción.", "Proyecto de servicio social en equipo vinculado a una tesis de maestría del Tecnológico Nacional de México."],
