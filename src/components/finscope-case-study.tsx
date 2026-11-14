@@ -82,13 +82,12 @@ export function FinScopeCaseStudy() {
             <p><T es="El dashboard nacional funciona en el navegador con HTML, CSS y JavaScript y carga archivos de datos preparados en JSON y GeoJSON. Python y SQL pertenecen al trabajo analítico y al repositorio inicial de Veracruz; la versión nacional publicada no se presenta como una aplicación conectada en vivo a PostgreSQL. Esta distinción permite entender qué herramientas respaldan el análisis y cuáles operan la interfaz actual." en="The national dashboard runs in the browser with HTML, CSS and JavaScript and loads prepared JSON and GeoJSON data files. Python and SQL belong to the analytical work and the initial Veracruz repository; the published national version is not presented as a live PostgreSQL-backed application. This distinction clarifies which tools support analysis and which power the current interface."/></p>
           </div></details> */}
         </div>
-        {/* Interactive source cards intentionally omitted: this section is a static summary. */}
-        {/* <div className={styles.methodFlow} aria-label="Fuentes y flujo de trabajo">
+        <div className={styles.methodFlow} aria-label="Fuentes y flujo de trabajo">
           <details><summary><span>01</span><strong><T es="CNBV · indicadores" en="CNBV · indicators"/></strong></summary><p><T es="Conteos municipales y población adulta, con corte de diciembre de 2025. La tasa es conteo / adultos × 10,000." en="Municipal counts and adult population, December 2025. Rate = count / adults × 10,000."/></p></details>
           <details><summary><span>02</span><strong><T es="INEGI · geometrías" en="INEGI · geometry"/></strong></summary><p><T es="GeoJSON estatal y contornos municipales para delimitar la selección y encuadrar el mapa." en="State GeoJSON and municipal boundaries to frame the selection and map."/></p></details>
           <details><summary><span>03</span><strong><T es="OSM · puntos" en="OSM · points"/></strong></summary><p><T es="Puntos de cajeros del extracto Geofabrik del 13 de noviembre de 2026, filtrados dentro del polígono municipal." en="ATM points from the November 13, 2026 Geofabrik extract, filtered inside the municipal polygon."/></p></details>
           <details><summary><span>04</span><strong><T es="Interfaz · lectura" en="Interface · reading"/></strong></summary><p><T es="HTML, CSS, JavaScript y Leaflet presentan JSON y GeoJSON preparados. Python y SQL respaldan el trabajo analítico inicial de Veracruz." en="HTML, CSS, JavaScript and Leaflet present prepared JSON and GeoJSON. Python and SQL support the initial Veracruz analytical work."/></p></details>
-        </div> */}
+        </div>
       </section>
 
       <section className={styles.section}>
