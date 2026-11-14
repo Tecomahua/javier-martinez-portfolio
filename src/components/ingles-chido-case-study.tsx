@@ -10,6 +10,7 @@ import { AelpCaptureGallery } from "@/components/aelp-capture-gallery";
 import { captures } from "@/data/ingles-chido/captures";
 import { LearningAnalysis } from "@/components/learning-analysis";
 import { InglesChidoCover } from "@/components/ingles-chido-cover";
+import { InglesChidoProblem } from "@/components/ingles-chido-problem";
 import { LanguageText } from "@/components/language-provider";
 
 
@@ -73,10 +74,12 @@ export function InglesChidoCaseStudy() {
         </div>
       </section>
 
+      <InglesChidoProblem />
+
       <section className="ingles-case-overview">
         <div className="shell ingles-case-overview-grid">
           <div>
-            <p className="eyebrow"><span>02</span> / <LanguageText es="PRODUCTO" en="PRODUCT" /></p>
+            <p className="eyebrow"><span>03</span> / <LanguageText es="PRODUCTO" en="PRODUCT" /></p>
             <h2><LanguageText es="Completar no equivale a dominar." en="Completion is not mastery." /></h2>
           </div>
           <p>
@@ -87,7 +90,7 @@ export function InglesChidoCaseStudy() {
 
       <section className="ingles-case-architecture" id="arquitectura">
         <div className="shell">
-          <p className="eyebrow"><span>03</span> / <LanguageText es="ARQUITECTURA" en="ARCHITECTURE" /></p>
+          <p className="eyebrow"><span>04</span> / <LanguageText es="ARQUITECTURA" en="ARCHITECTURE" /></p>
           <div className="ingles-case-section-heading">
             <h2><LanguageText es="Registros locales → API → datos analizables" en="Local records → API → analyzable data" /></h2>
             <p><LanguageText es="La recopilación funciona hoy dentro del prototipo. La integración remota y el procesamiento analítico aún no forman parte del flujo móvil." en="Data collection currently takes place within the prototype. Remote integration and analytical processing are not yet part of the mobile flow." /></p>
@@ -123,7 +126,7 @@ export function InglesChidoCaseStudy() {
         <div className="shell">
           <div className="ingles-case-section-heading">
             <div>
-              <p className="eyebrow"><span>05</span> / <LanguageText es="EXPLORAR LA APP" en="EXPLORE THE APP" /></p>
+              <p className="eyebrow"><span>06</span> / <LanguageText es="EXPLORAR LA APP" en="EXPLORE THE APP" /></p>
               <h2><LanguageText es="La experiencia, en pantallas." en="The experience, on screen." /></h2>
             </div>
             <p><LanguageText es="Capturas del prototipo móvil actual. Selecciona una para ampliarla." en="Screenshots from the current mobile prototype. Select one to enlarge it." /></p>
@@ -136,7 +139,7 @@ export function InglesChidoCaseStudy() {
       <section className="ingles-case-stack">
         <div className="shell ingles-case-stack-grid">
           <div>
-            <p className="eyebrow"><span>06</span> / <LanguageText es="STACK TÉCNICO" en="TECH STACK" /></p>
+            <p className="eyebrow"><span>07</span> / <LanguageText es="STACK TÉCNICO" en="TECH STACK" /></p>
             <h2><LanguageText es="La experiencia genera evidencias." en="The experience creates evidence." /></h2>
             <p>
               <LanguageText es="La app móvil es la fuente actual de datos de aprendizaje. Su estado y registros son locales; el servicio API y la persistencia centralizada pertenecen a etapas posteriores. El análisis sintético mostrado es independiente de la app." en="The mobile app is the current source of learning data. Its state and records are local; the API and centralized storage belong to later stages. The synthetic analysis shown is independent of the app." />
@@ -167,7 +170,7 @@ export function InglesChidoCaseStudy() {
       <section className="ingles-case-contribution">
         <div className="shell ingles-case-overview-grid">
           <div>
-            <p className="eyebrow"><span>07</span> / <LanguageText es="MI PARTICIPACIÓN" en="MY ROLE" /></p>
+            <p className="eyebrow"><span>08</span> / <LanguageText es="MI PARTICIPACIÓN" en="MY ROLE" /></p>
             <h2><LanguageText es="Producto, desarrollo y estrategia de datos." en="Product, development, and data strategy." /></h2>
           </div>
           <div>
