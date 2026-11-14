@@ -88,9 +88,9 @@ const figures: AelpCapture[] = [
     title: "Prioridad por zona",
     titleEn: "Neighborhood priority",
     description:
-      "El Centro obtuvo 77.4/100 y encabeza la priorización dentro de Orizaba; las condiciones del local aún requieren revisión en campo.",
+      "El informe asigna al Centro 77.4/100; el cálculo no se reproduce en el código y requiere validación en campo.",
     descriptionEn:
-      "Downtown scored 77.4/100 and ranks first within Orizaba; property conditions still require field validation.",
+      "The report assigns downtown 77.4/100; the calculation is not reproduced in the code and requires field validation.",
     alt: "Gráfica de score de oportunidad por zona: Centro 77.4, Centro Barrio Aulicaba 53.5, Cerritos 52.1 y otras zonas alrededor de 50.",
     altEn:
       "Neighborhood opportunity score chart: downtown 77.4, Centro Barrio Aulicaba 53.5, Cerritos 52.1, and other areas around 50.",
@@ -198,8 +198,8 @@ const metrics = [
     value: "78.8",
     label: "índice regional de Orizaba",
     labelEn: "Orizaba regional index",
-    note: "Índice del informe original · 0–100",
-    noteEn: "Original report index · 0–100",
+    note: "Informe original · cálculo no reproducido públicamente",
+    noteEn: "Original report · calculation not publicly reproduced",
   },
   {
     value: "77.4",
@@ -237,6 +237,7 @@ export function SpaOrizabaCaseStudy() {
                 {["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"].map((tag) => <span key={tag}>{tag}</span>)}
               </div>
               <div className={styles.heroActions}>
+                <a className="button button-secondary" href="https://github.com/Tecomahua/spa-orizaba-market-analysis" target="_blank" rel="noreferrer"><LanguageText es="Ver documentación en GitHub" en="View documentation on GitHub" /> <ArrowUpRight size={17} /></a>
                 <Link className={`button button-primary ${styles.heroAction}`} href="#metodo">
                   <LanguageText es="Ver el análisis" en="Explore the analysis" /> <ArrowRight size={17} />
                 </Link>
@@ -255,7 +256,7 @@ export function SpaOrizabaCaseStudy() {
                 />
               </div>
               <figcaption>
-                <span><LanguageText es="ÍNDICE REGIONAL · 0–100" en="REGIONAL INDEX · 0–100" /></span>
+                <span><LanguageText es="INFORME ORIGINAL · ÍNDICE NO REPRODUCIDO" en="ORIGINAL REPORT · INDEX NOT REPRODUCED" /></span>
                 <strong><LanguageText es="Orizaba" en="Orizaba" /> <em>78.8</em></strong>
               </figcaption>
             </figure>
