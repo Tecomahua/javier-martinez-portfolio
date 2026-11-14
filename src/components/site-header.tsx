@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, SunMoon, X } from "lucide-react";
-import { navigation, profile } from "@/data/profile";
+import { navigation } from "@/data/profile";
 import { useLanguage } from "@/components/language-provider";
 
 const navigationLabels = {
@@ -90,7 +90,6 @@ export function SiteHeader() {
         <Link
           className="brand"
           href={pathname === "/" ? "#inicio" : "/#inicio"}
-          aria-label={`${profile.name}, ${language === "es" ? "inicio" : "home"}`}
           onClick={() => setMenuOpen(false)}
         >
           <span className="brand-mark" aria-hidden="true">
@@ -132,7 +131,7 @@ export function SiteHeader() {
             className="icon-button language-button"
             type="button"
             onClick={toggleLanguage}
-            aria-label={language === "es" ? "Switch language to English" : "Cambiar idioma a español"}
+            aria-label={language === "es" ? "EN — Switch language to English" : "ES — Cambiar idioma a español"}
             title={language === "es" ? "English" : "Español"}
           >
             <span>{language === "es" ? "EN" : "ES"}</span>

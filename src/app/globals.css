@@ -1604,10 +1604,9 @@ html[data-scrolled="true"] .site-header {
 }
 .footer-wordmark {
   margin: 43px 0 -1.4vw;
-  color: transparent;
+  color: var(--muted);
   font: 500 clamp(65px, 12.5vw, 200px)/0.9 var(--heading-font);
   letter-spacing: -0.075em;
-  -webkit-text-stroke: 1px var(--border);
   white-space: nowrap;
   text-align: center;
   user-select: none;
@@ -2433,7 +2432,7 @@ html[data-scrolled="true"] .site-header {
   border-color: var(--muted-2);
 }
 .aelp-gallery-filter span {
-  opacity: 0.65;
+  opacity: 1;
   font-size: 11px;
 }
 .aelp-gallery-filter.aelp-gallery-filter-active {
@@ -5309,4 +5308,35 @@ html[data-scrolled="true"] .site-header {
 @media (max-width: 768px) {
   .project-card-ingles .ingles-chido-home-visual { min-height: 0; }
   .project-card-ingles .ingles-chido-card-media { height: 245px; }
+}
+
+.ingles-case-analysis { padding-block: 100px; border-top: 1px solid var(--border); background: var(--bg-soft); }
+.ingles-case-analysis .ingles-case-section-heading { margin-top: 24px; }
+.analysis-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 70px; margin-top: 42px; }
+.analysis-grid h3 { font: 500 20px var(--heading-font); margin: 0 0 12px; }
+.analysis-grid p { color: var(--muted); font-size: 13px; line-height: 1.75; }
+.analysis-chart { list-style: none; padding: 0; margin: 24px 0 0; }
+.analysis-chart li { margin-bottom: 22px; }
+.analysis-chart li > div:first-child { display: flex; justify-content: space-between; gap: 12px; font-size: 13px; }
+.analysis-track { height: 10px; margin-top: 9px; background: var(--border); }
+.analysis-track span { display: block; height: 100%; background: var(--ingles-blue); }
+.analysis-method a { display: inline-block; margin-top: 12px; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 700px) { .ingles-case-analysis { padding-block: 66px; } .analysis-grid { grid-template-columns: 1fr; gap: 30px; } }
+@media print {
+  .ingles-case { --bg: #fff; --bg-soft: #fff; --surface: #fff; --surface-2: #fff; --text: #111827; --muted: #374151; --muted-2: #475569; --border: #cbd5e1; color: var(--text); }
+  body:has(.ingles-case) .skip-link, body:has(.ingles-case) .site-footer, .ingles-case .project-pagination { display: none; }
+  .ingles-case-hero-visual { display: none; }
+  .ingles-case-hero-grid { display: block; }
+  .ingles-case-hero { padding-block: 16px !important; }
+  .ingles-case-overview, .ingles-case-architecture, .ingles-case-analysis, .ingles-case-app, .ingles-case-stack, .ingles-case-contribution { padding-block: 18px !important; }
+  .ingles-case-analysis { padding-block: 18px; }
+  .ingles-case-app .mobile-showcase-toolbar, .ingles-case-app .aelp-gallery-filters { display: none; }
+  .ingles-case-app .mobile-showcase-gallery { margin-top: 20px; gap: 12px; }
+  .ingles-case-app .mobile-showcase-gallery .aelp-gallery-item { break-inside: avoid; padding: 8px; }
+  .ingles-case-app .mobile-showcase-phone { max-width: 110px; box-shadow: none; }
+  .ingles-case section { break-inside: auto; }
+  .ingles-case-architecture-grid article, .analysis-chart li, .analysis-method, .ingles-case-stack-list article { break-inside: avoid; }
+  .ingles-case h2, .ingles-case h3 { break-after: avoid; }
+  .analysis-track { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+  .analysis-track span { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
 }

@@ -115,10 +115,10 @@ export function AelpCaptureGallery({
   }, [filteredCaptures, isDesktop, selected]);
 
   useEffect(() => {
-    if (!isDesktop) return;
+    if (!isDesktop && !mobileShowcase) return;
     if (selected) closeButtonRef.current?.focus();
     else triggerRef.current?.focus();
-  }, [isDesktop, selected]);
+  }, [isDesktop, mobileShowcase, selected]);
 
   return (
     <>
@@ -209,7 +209,7 @@ export function AelpCaptureGallery({
           aria-label={captureTitle(selected)}
           onClick={() => setSelected(null)}
           onKeyDown={(event) => {
-            if (isDesktop && event.key === "Tab") {
+            if ((isDesktop || mobileShowcase) && event.key === "Tab") {
               event.preventDefault();
               closeButtonRef.current?.focus();
             }
