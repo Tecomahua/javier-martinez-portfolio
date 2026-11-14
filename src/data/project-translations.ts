@@ -2,31 +2,30 @@ import type { Project } from "@/data/projects";
 
 export const projectEnglish: Record<string, Partial<Project>> = {
   "ingles-chido": {
+    category: "Educational Data Science & Learning Analytics",
     role: "Founder and developer",
     status: "In development",
     summary:
-      "Adaptive English Learning Platform (AELP): a mobile platform for learning English that connects daily practice with evidence of progress.",
+      "Inglés Chido is an educational data science initiative developing AELP, an adaptive English-learning platform. Its current prototype captures learning attempts, answers, and errors, creating a foundation for future learning analytics, knowledge-gap detection, and personalized learning recommendations.",
     problem:
       "Completing activities does not, by itself, prove that a student has learned. Progress needs to be supported by evidence over time.",
     solution:
       "A progressive mobile experience with a visual learning path, lessons, and local records of answers, mistakes, and review needs.",
     contribution:
-      "I founded the project and work on its product vision, learning experience, and mobile app development.",
+      "I lead the product vision, learning experience, and mobile development, and define the strategy for turning learning records into analyzable evidence.",
     overview: [
-      "Inglés Chido — Adaptive English Learning Platform (AELP) — is a mobile platform for learning English. Its core principle distinguishes completing an activity from demonstrating mastery: progress should be built from different kinds of evidence over time.",
-      "The current app is a navigable prototype with in-memory state and data. FastAPI, PostgreSQL, and Alembic are part of the backend architecture under development, but do not yet support the main app flow.",
+      "Inglés Chido is evolving into AELP (Adaptive English Learning Platform), an evidence-based English-learning platform. Completing an activity does not demonstrate mastery; attempts, answers, and errors can provide signals for assessing difficulties and progress.",
+      "The mobile prototype already keeps learning records and states locally. Integration with FastAPI and PostgreSQL is in development; processing with Python and pandas, mastery metrics, and personalization belong to later stages.",
     ],
     implemented: [
-      "Onboarding, welcome flow, and profile configured with local state.",
-      "Visual learning path, lessons, and progress states managed locally.",
-      "Local records of attempts, answers, mistakes, vocabulary, and review needs.",
-      "Review, vocabulary, progress, and local demonstration assessment modules.",
+      "A1 mobile prototype with onboarding, a visual learning path, and introductory lessons.",
+      "Local progress tracking and records of attempts, answers, errors, and review needs.",
+      "Review, vocabulary, and progress modules based on local state.",
     ],
     planned: [
-      "Unify evidence across skills and identify weaknesses from repeated mistakes.",
-      "Adapt practice sessions and present clear explanations of progress.",
-      "Gradually migrate local persistence to API services and a database.",
-      "Explore learning analytics, machine learning, and language-model assistance. No trained predictive models or production LLM integrations are claimed here.",
+      "Integrate local records with FastAPI and PostgreSQL to retain evidence across sessions.",
+      "Process data with Python and pandas and define mastery and progress metrics by topic.",
+      "Identify difficulty patterns, explore predictive models, and recommend adaptive practice; there are no trained models or production recommendations yet.",
     ],
   },
   "tutor-ia-nem": {
