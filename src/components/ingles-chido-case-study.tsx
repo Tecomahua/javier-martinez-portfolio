@@ -320,7 +320,7 @@ export function InglesChidoCaseStudy() {
             </div>
             <p><LanguageText es="Capturas del prototipo móvil actual. Selecciona una para ampliarla." en="Screenshots from the current mobile prototype. Select one to enlarge it." /></p>
           </div>
-          <AelpCaptureGallery captures={captures} />
+          <AelpCaptureGallery captures={captures} mobileShowcase />
         </div>
       </section>
 
