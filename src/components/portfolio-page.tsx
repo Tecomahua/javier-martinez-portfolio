@@ -41,7 +41,7 @@ export function PortfolioPage() {
                 ↳
               </span>
               <p className="about-lede">
-                <LanguageText es="Transformo preguntas de negocio y aprendizaje en fuentes, indicadores y conclusiones con límites explícitos." en="I turn business and learning questions into data sources, indicators, and conclusions with explicit limits." />
+                <LanguageText es="Analizo datos con SQL, Python y herramientas de visualización para identificar patrones, construir indicadores y comunicar hallazgos que apoyen decisiones." en="I analyze data with SQL, Python, and visualization tools to identify patterns, build indicators, and communicate findings that support decisions." />
               </p>
             </div>
             <div className="about-facts">
