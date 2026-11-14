@@ -9,6 +9,9 @@ export type Project = {
   problem: string;
   solution: string;
   contribution: string;
+  method: string;
+  finding: string;
+  evidence: string;
   tags: string[];
   techStack?: string[];
   featured?: boolean;
@@ -20,8 +23,40 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "ingles-chido",
+    slug: "spa-orizaba",
     number: "01",
+    name: "SPA Orizaba",
+    category: "Análisis de datos · Decisión comercial",
+    role: "Análisis técnico de datos",
+    status: "Proyecto académico · 2026",
+    summary:
+      "Análisis de datos públicos para evaluar la oportunidad de instalar un SPA en Orizaba y priorizar una zona de búsqueda.",
+    problem:
+      "La decisión requería contrastar capacidad económica, perfil demográfico y competencia local sin presentar señales indirectas como demanda comprobada.",
+    solution:
+      "Una comparación regional y por zonas que integra datos económicos, demográficos y de establecimientos en indicadores y visualizaciones para orientar la siguiente investigación de campo.",
+    contribution:
+      "Lideré el trabajo técnico: localicé, limpié, transformé e integré las fuentes de datos; preparé indicadores y generé los insumos para el storytelling y la comunicación del equipo.",
+    method: "Limpieza y cruce de ENIGH, DENUE e ITER con Python/pandas; comparación regional y por zonas.",
+    finding: "El informe priorizó el Centro de Orizaba para una visita de campo, sin inferir ventas ni demanda comprobada.",
+    evidence: "Visualizaciones del informe visibles; repositorio privado. El score 77.4/100 no se reproduce con el código del proyecto.",
+    tags: ["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"],
+    overview: [
+      "Proyecto académico de ciencia de datos para evaluar si Orizaba ofrecía señales favorables para un SPA mixto y accesible, y para decidir dónde iniciar la búsqueda de un local.",
+      "El análisis combina contexto económico estatal de ENIGH 2024 con registros de DENUE y perfil demográfico municipal de CPV 2020 / ITER. La evidencia permite priorizar opciones; no sustituye una medición de ventas ni un estudio comercial de campo.",
+    ],
+    implemented: [
+      "Preparación y análisis de ENIGH, DENUE e ITER / CPV 2020.",
+      "Clasificación de competencia directa y servicios afines con normalización de nombres y validación geográfica.",
+      "Indicadores regionales y por zona, más visualizaciones de competencia y perfil demográfico.",
+    ],
+    planned: [
+      "Validar renta, flujo peatonal, estacionamiento, seguridad y condiciones del local antes de tomar una decisión de inversión.",
+    ],
+  },
+  {
+    slug: "ingles-chido",
+    number: "02",
     name: "Inglés Chido",
     category: "Educational Data Science & Learning Analytics",
     role: "Fundador y desarrollador",
@@ -34,6 +69,9 @@ export const projects: Project[] = [
       "Una experiencia móvil progresiva con ruta visual, lecciones y registro local de respuestas, errores y repasos.",
     contribution:
       "Lidero la visión de producto, la experiencia y el desarrollo móvil, y defino la estrategia para convertir registros de aprendizaje en evidencias analizables.",
+    method: "Registro local de aprendizaje; limpieza y agrupación con Python/pandas en un ejercicio sintético independiente.",
+    finding: "El ejemplo reproducible procesa 24 intentos sintéticos; todavía no mide el dominio de estudiantes reales.",
+    evidence: "Código, datos sintéticos y pruebas públicas; integración analítica con la app pendiente.",
     tags: ["React Native", "TypeScript", "Expo"],
     overview: [
       "Inglés Chido evoluciona hacia AELP (Adaptive English Learning Platform), una plataforma de inglés basada en evidencias. Completar una actividad no demuestra dominio; intentos, respuestas y errores pueden aportar señales para evaluar dificultades y progreso.",
@@ -52,7 +90,7 @@ export const projects: Project[] = [
   },
   {
     slug: "finscope-mexico",
-    number: "02",
+    number: "03",
     name: "FinScope México",
     category: "Análisis de datos · Inclusión financiera",
     role: "Análisis de datos y desarrollo del dashboard",
@@ -61,6 +99,9 @@ export const projects: Project[] = [
     problem: "Los conteos agregados de infraestructura son difíciles de explorar territorialmente y no describen por sí solos el acceso efectivo.",
     solution: "Un dashboard con filtros municipales, mapa por entidad, tasas por cada 10,000 adultos y contexto metodológico.",
     contribution: "Preparación de datos, diseño de indicadores y desarrollo de la experiencia interactiva.",
+    method: "Conteos CNBV y tasas por 10,000 adultos; límites INEGI y puntos OSM para la exploración territorial.",
+    finding: "En las capturas, Álvaro Obregón registra 2.49 sucursales por 10,000 adultos frente a 2.12 en CDMX.",
+    evidence: "Capturas y prototipo inicial público; el dashboard nacional requiere acceso privado.",
     tags: ["Python", "SQL", "CNBV", "INEGI", "OpenStreetMap"],
     overview: ["El proyecto analiza infraestructura financiera en 2,475 municipios identificados, con corte CNBV a diciembre de 2025."],
     implemented: ["Mapa estatal y filtros municipales.", "Indicadores por cada 10,000 adultos y puntos de cajeros de OpenStreetMap."],
@@ -68,7 +109,7 @@ export const projects: Project[] = [
   },
   {
     slug: "tutor-ia-nem",
-    number: "03",
+    number: "04",
     name: "STI-NEM",
     category: "Tecnología educativa · Integración de datos",
     role: "Frontend docente · Apoyo en integración de datos",
@@ -77,40 +118,14 @@ export const projects: Project[] = [
     problem: "El sistema necesita conectar interfaces educativas con datos relacionales consistentes y servicios de backend.",
     solution: "Una arquitectura con frontend Next.js, API NestJS y PostgreSQL mediante Prisma, con revisión de integridad en una copia aislada.",
     contribution: "Desarrollé principalmente pantallas docentes y apoyé los servicios, adaptadores y la revisión de conexión de base de datos junto al equipo.",
+    method: "Integración de interfaces y contratos API; revisión de integridad relacional en una copia aislada.",
+    finding: "La bitácora del equipo registra 52 tablas y 99 claves foráneas validadas; no son métricas de producción.",
+    evidence: "Bitácora del proyecto; falta una auditoría independiente publicada.",
     tags: ["SQL", "PostgreSQL", "Integración de datos", "Prisma", "NestJS"],
     techStack: ["PostgreSQL 18", "Prisma", "NestJS", "Next.js", "TypeScript"],
     overview: ["La bitácora registra 52 tablas, 26,805 registros auditados y 99 claves foráneas validadas en una copia aislada; no son métricas de producción.", "Proyecto de servicio social en equipo vinculado a una tesis de maestría del Tecnológico Nacional de México."],
     implemented: ["Pantallas docentes y servicios con adaptadores para contratos de API.", "Revisión de integridad, migración Prisma autorizada y pruebas de disponibilidad y protección de rutas documentadas en la bitácora."],
     planned: ["Completar el adaptador de tutoría estudiantil y datos académicos parciales.", "Configurar plantillas y probar el worker de generación en una copia aislada."],
-  },
-  {
-    slug: "spa-orizaba",
-    number: "04",
-    name: "SPA Orizaba",
-    category: "Ciencia de Datos · Análisis comercial",
-    role: "Análisis técnico · Ciencia de Datos",
-    status: "Proyecto académico · 2026",
-    summary:
-      "Análisis de datos públicos para evaluar la oportunidad de instalar un SPA en Orizaba y priorizar una zona de búsqueda.",
-    problem:
-      "La decisión requería contrastar capacidad económica, perfil demográfico y competencia local sin presentar señales indirectas como demanda comprobada.",
-    solution:
-      "Una comparación regional y por zonas que integra datos económicos, demográficos y de establecimientos en indicadores y visualizaciones para orientar la siguiente investigación de campo.",
-    contribution:
-      "Lideré el trabajo técnico: localicé, limpié, transformé e integré las fuentes de datos; preparé indicadores y generé los insumos para el storytelling y la comunicación del equipo.",
-    tags: ["Python", "Pandas", "NumPy", "ENIGH 2024", "DENUE", "INEGI"],
-    overview: [
-      "Proyecto académico de ciencia de datos para evaluar si Orizaba ofrecía señales favorables para un SPA mixto y accesible, y para decidir dónde iniciar la búsqueda de un local.",
-      "El análisis combina contexto económico estatal de ENIGH 2024 con registros de DENUE y perfil demográfico municipal de CPV 2020 / ITER. La evidencia permite priorizar opciones; no sustituye una medición de ventas ni un estudio comercial de campo.",
-    ],
-    implemented: [
-      "Preparación y análisis de ENIGH, DENUE e ITER / CPV 2020.",
-      "Clasificación de competencia directa y servicios afines con normalización de nombres y validación geográfica.",
-      "Indicadores regionales y por zona, más visualizaciones de competencia y perfil demográfico.",
-    ],
-    planned: [
-      "Validar renta, flujo peatonal, estacionamiento, seguridad y condiciones del local antes de tomar una decisión de inversión.",
-    ],
   },
 ];
 

@@ -1,54 +1,38 @@
 export const skillGroups = [
   {
     number: "01",
-    title: "Ciencia de Datos y Machine Learning",
-    note: "Enfoque de especialización",
-    items: [
-      "Python",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Análisis exploratorio de datos",
-      "Fundamentos de estadística y Machine Learning",
-    ],
+    title: "Análisis con Python",
+    note: "Aplicado en SPA Orizaba y ejemplo sintético",
+    items: ["Python", "pandas", "NumPy", "Limpieza y transformación de datos", "Análisis exploratorio", "Visualización de resultados"],
   },
   {
     number: "02",
-    title: "Desarrollo de software",
-    note: "Experiencia práctica en producto",
-    items: ["TypeScript", "JavaScript", "React", "React Native", "Expo", "Next.js", "FastAPI", "APIs REST"],
+    title: "SQL y datos relacionales",
+    note: "Usado en integración; evidencia parcial privada",
+    items: ["SQL", "PostgreSQL", "Integridad relacional", "Prisma", "APIs REST"],
   },
   {
     number: "03",
-    title: "Datos y herramientas",
-    note: "Entorno de trabajo",
-    items: ["PostgreSQL", "Git", "GitHub", "Jupyter Notebook", "Visual Studio Code"],
+    title: "Excel, Power BI y herramientas",
+    note: "Excel y Power BI: en formación, sin caso publicado",
+    items: ["Excel (en formación)", "Power BI (en formación)", "Jupyter Notebook", "Git", "GitHub"],
   },
 ] as const;
 
 export const skillGroupsEnglish = [
   {
-    title: "Data Science & Machine Learning",
-    note: "Specialization focus",
-    items: [
-      "Python",
-      "SQL",
-      "Pandas",
-      "NumPy",
-      "Scikit-learn",
-      "Exploratory data analysis",
-      "Statistics and machine learning fundamentals",
-    ],
+    title: "Analysis with Python",
+    note: "Used in SPA Orizaba and synthetic example",
+    items: ["Python", "pandas", "NumPy", "Data cleaning and transformation", "Exploratory analysis", "Results visualization"],
   },
   {
-    title: "Software development",
-    note: "Hands-on product experience",
-    items: ["TypeScript", "JavaScript", "React", "React Native", "Expo", "Next.js", "FastAPI", "REST APIs"],
+    title: "SQL and relational data",
+    note: "Used in integration; some evidence is private",
+    items: ["SQL", "PostgreSQL", "Relational integrity", "Prisma", "REST APIs"],
   },
   {
-    title: "Data & tools",
-    note: "Working environment",
-    items: ["PostgreSQL", "Git", "GitHub", "Jupyter Notebook", "Visual Studio Code"],
+    title: "Excel, Power BI and tools",
+    note: "Excel and Power BI: learning, no published case yet",
+    items: ["Excel (learning)", "Power BI (learning)", "Jupyter Notebook", "Git", "GitHub"],
   },
 ] as const;

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, ArrowUpRight, BarChart3, Database, Map, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, BarChart3, Map, ShieldCheck } from "lucide-react";
 import { LanguageText as T } from "@/components/language-provider";
 import { getPublicAssetPath } from "@/lib/site-url";
 import styles from "./finscope-case-study.module.css";
@@ -29,7 +29,7 @@ export function FinScopeCaseStudy() {
     <div className={styles.shell}>
       <Link className={styles.back} href="/#proyectos"><ArrowLeft size={16}/><T es="Volver a proyectos" en="Back to projects"/></Link>
       <header className={styles.hero}>
-        <p className={styles.eyebrow}>02 / DATA ANALYTICS · FINANCIAL INCLUSION</p>
+        <p className={styles.eyebrow}>03 / DATA ANALYTICS · FINANCIAL INCLUSION</p>
         <h1>FinScope México<span>.</span></h1>
         <p className={styles.lead}><T es="Un observatorio para explorar dónde se reporta infraestructura financiera en México, comparar territorios con una misma escala y formular mejores preguntas." en="An observatory to explore where financial infrastructure is reported in Mexico, compare places on a common scale and ask better questions."/></p>
         <div className={styles.pills}><span>CNBV</span><span>INEGI</span><span>OpenStreetMap</span><span>Leaflet</span><span>Python</span><span>SQL</span></div>

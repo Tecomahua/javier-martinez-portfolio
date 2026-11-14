@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { ArrowLeft, ArrowRight, ArrowUpRight, Database, Layers3, Server, ShieldCheck } from "lucide-react";
+import { ArrowLeft, ArrowRight, Database, Layers3, Server, ShieldCheck } from "lucide-react";
 import { AelpCaptureGallery, type AelpCapture } from "@/components/aelp-capture-gallery";
 import { StiNemBrowserFrame } from "@/components/sti-nem-browser-frame";
 import { LanguageText } from "@/components/language-provider";
 import { getPublicAssetPath } from "@/lib/site-url";
-
-const organizationUrl = "https://github.com/Tutor-IA-NEM";
 
 const captures: AelpCapture[] = [
   {
@@ -64,12 +62,12 @@ export function StiNemCaseStudy() {
       <section className="sti-case-hero"><div className="shell">
         <Link className="back-link" href="/#proyectos"><ArrowLeft size={15} /> <LanguageText es="Volver a proyectos" en="Back to projects" /></Link>
         <div className="sti-case-hero-grid"><div className="sti-case-intro">
-          <p className="eyebrow"><span>03</span> / <LanguageText es="CASO DE ESTUDIO · INTEGRACIÓN DE DATOS" en="CASE STUDY · DATA INTEGRATION" /></p>
+          <p className="eyebrow"><span>04</span> / <LanguageText es="PROYECTO COMPLEMENTARIO · INTEGRACIÓN DE DATOS" en="COMPLEMENTARY PROJECT · DATA INTEGRATION" /></p>
           <h1>STI-NEM<span>.</span></h1>
           <p className="sti-case-subtitle">SQL &amp; Database Integration</p>
           <p className="sti-case-lede"><LanguageText es="Sistema educativo en equipo con PostgreSQL, NestJS, Prisma y Next.js. Desarrollé principalmente el módulo docente y apoyé la integración y validación de datos entre la interfaz, la API y la base de datos." en="A team-built education system using PostgreSQL, NestJS, Prisma, and Next.js. I primarily developed the teacher module and supported data integration and validation across the interface, API, and database." /></p>
           <div className="sti-case-tags"><span>SQL</span><span>PostgreSQL 18</span><span>Prisma</span><span>NestJS</span><span>Next.js</span></div>
-          <div className="sti-case-actions"><a className="sti-case-org-link" href={organizationUrl} target="_blank" rel="noreferrer"><LanguageText es="Organización en GitHub" en="GitHub organization" /> <ArrowUpRight size={15} /></a><a className="sti-case-secondary" href="#data-quality"><LanguageText es="Ver evidencia de datos" en="Explore data evidence" /> <ArrowRight size={15} /></a></div>
+          <div className="sti-case-actions"><a className="sti-case-secondary" href="#data-quality"><LanguageText es="Ver evidencia de datos" en="Explore data evidence" /> <ArrowRight size={15} /></a></div>
           <p className="sti-case-academic"><LanguageText es="Servicio social en un proyecto de tesis de maestría del Tecnológico Nacional de México, dirigido por la MCE Beatriz Zepahua." en="Social service work on a master's thesis project at Mexico's National Technological Institute, supervised by MCE Beatriz Zepahua." /></p>
         </div><StiNemBrowserFrame className="sti-case-hero-frame" priority /></div>
       </div></section>
@@ -112,7 +110,7 @@ export function StiNemCaseStudy() {
         <article><Server size={18} /><h3><LanguageText es="Tutoría y generación" en="Tutoring and generation" /></h3><p><LanguageText es="La interfaz estudiantil requiere completar su adaptador. La generación devolvió 409 por falta de plantillas activas y requiere configurar y probar el worker." en="The student interface still needs its adapter completed. Generation returned 409 because active templates were missing and requires worker configuration and testing." /></p></article>
         <article><Database size={18} /><h3><LanguageText es="Alcance de la evidencia" en="Evidence scope" /></h3><p><LanguageText es="Cifras y comprobaciones proceden de la bitácora del proyecto, no de una auditoría independiente publicada. Las capturas no demuestran por sí solas integración o resultados." en="Figures and checks come from the project log, not a published independent audit. Screenshots alone do not demonstrate integration or outcomes." /></p></article>
       </div></div></section>
-      <nav className="shell project-pagination" aria-label="Más proyectos / More projects"><Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link><Link href="/proyectos/spa-orizaba/"><div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>SPA Orizaba</strong></div><ArrowRight size={23} /></Link></nav>
+      <nav className="shell project-pagination" aria-label="Más proyectos / More projects"><Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link><Link href="/proyectos/spa-orizaba/"><div><small><LanguageText es="PROYECTO DESTACADO" en="FEATURED PROJECT" /></small><strong>SPA Orizaba</strong></div><ArrowRight size={23} /></Link></nav>
     </main>
   );
 }

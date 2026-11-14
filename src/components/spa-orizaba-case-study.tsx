@@ -6,7 +6,6 @@ import {
   ArrowUpRight,
   ChartNoAxesCombined,
   Database,
-  Github,
   MapPin,
   Users,
   Workflow,
@@ -135,9 +134,9 @@ const pipeline = [
     icon: ChartNoAxesCombined,
     title: "Construir indicadores",
     titleEn: "Build indicators",
-    body: "Calculé promedios ponderados ENIGH, un proxy de gasto relacionado y scores relativos para municipios y zonas.",
+    body: "Preparé promedios ponderados ENIGH, un proxy de gasto y comparaciones municipales. El score de zonas pertenece al informe original y no se reproduce en el código del proyecto.",
     bodyEn:
-      "I calculated weighted ENIGH averages, a related-spending proxy, and relative scores for municipalities and neighborhoods.",
+      "I prepared weighted ENIGH averages, a spending proxy, and municipal comparisons. The neighborhood score belongs to the original report and is not reproduced in the project code.",
   },
   {
     number: "05",
@@ -185,28 +184,29 @@ const metrics = [
     value: "123,182",
     label: "habitantes en Orizaba",
     labelEn: "residents in Orizaba",
-    note: "CPV 2020 / ITER",
+    note: "CPV 2020 / ITER · informe original",
+    noteEn: "2020 Census / ITER · original report",
   },
   {
     value: "26",
     label: "SPA directos en DENUE",
     labelEn: "direct spas in DENUE",
-    note: "Competencia registrada",
-    noteEn: "Registered competitors",
+    note: "Clasificación del informe original",
+    noteEn: "Original report classification",
   },
   {
     value: "78.8",
     label: "índice regional de Orizaba",
     labelEn: "Orizaba regional index",
-    note: "Comparación entre municipios · 0–100",
-    noteEn: "Municipal comparison · 0–100",
+    note: "Índice del informe original · 0–100",
+    noteEn: "Original report index · 0–100",
   },
   {
     value: "77.4",
     label: "score de zona Centro",
     labelEn: "Downtown area score",
-    note: "Comparación dentro de Orizaba · 0–100",
-    noteEn: "Comparison within Orizaba · 0–100",
+    note: "Cifra del informe · no reproducida por el código",
+    noteEn: "Report figure · not reproduced by the code",
   },
 ];
 
@@ -221,7 +221,7 @@ export function SpaOrizabaCaseStudy() {
           <div className={styles.heroGrid}>
             <div className={styles.heroCopy}>
               <p className="eyebrow">
-                <span>03</span> / <LanguageText es="CASO DE CIENCIA DE DATOS" en="DATA SCIENCE CASE STUDY" />
+                <span>01</span> / <LanguageText es="CASO DE ANÁLISIS DE DATOS" en="DATA ANALYSIS CASE STUDY" />
               </p>
               <h1>SPA <span>Orizaba</span><b>.</b></h1>
               <p className={styles.subtitle}>
@@ -240,14 +240,6 @@ export function SpaOrizabaCaseStudy() {
                 <Link className={`button button-primary ${styles.heroAction}`} href="#metodo">
                   <LanguageText es="Ver el análisis" en="Explore the analysis" /> <ArrowRight size={17} />
                 </Link>
-                <a
-                  className={`button button-secondary ${styles.repoAction}`}
-                  href="https://github.com/Tecomahua/spa-orizaba-analisis"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Github size={16} /> <LanguageText es="Ver repositorio" en="View repository" />
-                </a>
               </div>
             </div>
             <figure className={styles.heroFigure}>
@@ -279,7 +271,7 @@ export function SpaOrizabaCaseStudy() {
               <h2><LanguageText es="Orizaba destacó en la región. El Centro, dentro de la ciudad." en="Orizaba led the region. Downtown ranked first within the city." /></h2>
             </div>
             <p>
-              <LanguageText es="Dos comparaciones, dos escalas: el índice 78.8 ordena municipios; el score 77.4 prioriza zonas dentro de Orizaba. Ambos ayudan a enfocar la investigación, no garantizan demanda." en="Two comparisons at two scales: the 78.8 index ranks municipalities; the 77.4 score prioritizes areas within Orizaba. Both focus further research; neither guarantees demand." />
+              <LanguageText es="El informe original compara municipios con un índice de 78.8 para Orizaba y prioriza el Centro con 77.4/100. El score de zona fue fijado en el anexo original y no se reproduce con el código del proyecto; ninguna cifra garantiza demanda." en="The original report compares municipalities using an index of 78.8 for Orizaba and prioritizes downtown with 77.4/100. The area score was fixed in the original appendix and is not reproduced by the project code; neither figure guarantees demand." />
             </p>
           </div>
           <div className={styles.metricGrid}>
@@ -336,7 +328,7 @@ export function SpaOrizabaCaseStudy() {
             </div>
             <div className={styles.readingCopy}>
               <p>
-                <LanguageText es="La zona Centro obtuvo el score más alto del análisis local: 77.4/100. La concentración comercial y la visibilidad la convierten en el mejor punto de partida para buscar un espacio." en="Downtown received the highest score in the local analysis: 77.4/100. Its commercial concentration and visibility make it the strongest place to begin looking." />
+                <LanguageText es="El informe original asignó al Centro el score más alto: 77.4/100. Es una priorización para visitar la zona, pero el cálculo no está reproducido por el código del proyecto." en="The original report assigned downtown the highest score: 77.4/100. It is a priority for a site visit, but the calculation is not reproduced by the project code." />
               </p>
               <p>
                 <LanguageText es="La recomendación es priorizar la búsqueda allí y revisar en campo renta, flujo peatonal, estacionamiento, seguridad y condiciones del inmueble. El análisis ubica dónde investigar; no reemplaza esa revisión." en="The recommendation is to prioritize the search there, then check rent, pedestrian traffic, parking, safety, and property conditions in person. The analysis points to where to investigate; it does not replace that work." />
@@ -430,7 +422,7 @@ export function SpaOrizabaCaseStudy() {
             <article>
               <span>03</span>
               <h3><LanguageText es="Scores relativos" en="Relative scores" /></h3>
-              <p><LanguageText es="Los indicadores sirven para ordenar opciones con las variables disponibles. La decisión final requiere visitas, cotizaciones y validación comercial." en="The indicators rank options using available variables. A final decision requires site visits, quotes, and commercial validation." /></p>
+              <p><LanguageText es="El 77.4/100 procede del anexo original y no se reproduce con el código del proyecto, cuyo repositorio es privado. La decisión final requiere visitas y validación comercial." en="The 77.4/100 figure comes from the original appendix and is not reproduced by the project code, which is in a private repository. A final decision requires site visits and commercial validation." /></p>
             </article>
           </div>
           <p className={styles.sourcesNote}>
@@ -441,8 +433,8 @@ export function SpaOrizabaCaseStudy() {
 
       <nav className={`shell project-pagination ${styles.pagination}`} aria-label="Más proyectos / More projects">
         <Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link>
-        <Link href="/proyectos/tutor-ia-nem/">
-          <div><small><LanguageText es="PROYECTO ANTERIOR" en="PREVIOUS PROJECT" /></small><strong>STI-NEM</strong></div>
+        <Link href="/proyectos/ingles-chido/">
+          <div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>Inglés Chido</strong></div>
           <ArrowRight size={23} />
         </Link>
       </nav>
