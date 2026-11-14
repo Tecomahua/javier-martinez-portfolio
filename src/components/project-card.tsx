@@ -32,6 +32,12 @@ export function ProjectCard({ project }: { project: Project }) {
         </div>
         <p className="project-category"><LanguageText es={project.category} en={projectText(project, "category")} /></p>
         <p className="project-summary"><LanguageText es={project.summary} en={projectText(project, "summary")} /></p>
+        <dl className="project-evidence">
+          <div><dt><LanguageText es="PROBLEMA" en="PROBLEM" /></dt><dd><LanguageText es={project.problem} en={projectText(project, "problem")} /></dd></div>
+          <div><dt><LanguageText es="MÉTODO Y HERRAMIENTAS" en="METHOD & TOOLS" /></dt><dd><LanguageText es={project.method} en={projectText(project, "method")} /> <span className="project-tools">{project.tags.join(" · ")}</span></dd></div>
+          <div><dt><LanguageText es="HALLAZGO" en="FINDING" /></dt><dd><LanguageText es={project.finding} en={projectText(project, "finding")} /></dd></div>
+          <div><dt><LanguageText es="EVIDENCIA Y LÍMITES" en="EVIDENCE & LIMITS" /></dt><dd><LanguageText es={project.evidence} en={projectText(project, "evidence")} /></dd></div>
+        </dl>
         <div className="project-role">
           <span><LanguageText es="MI PARTICIPACIÓN" en="MY ROLE" /></span>
           <p><LanguageText es={project.role} en={projectText(project, "role")} /></p>

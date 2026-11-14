@@ -7,14 +7,14 @@ import { getPublicAssetPath, getSiteUrl } from "@/lib/site-url";
 import "./globals.css";
 
 const siteDescription =
-  "Portafolio de Javier Martínez: ingeniería de software, productos educativos y enfoque profesional en Ciencia de Datos y Machine Learning.";
+  "Javier Martínez, candidato a Data Analyst Intern. Proyectos de análisis con Python, pandas y SQL; metodología, hallazgos, evidencias y límites verificables.";
 const siteUrl = getSiteUrl();
 const canonicalUrl = siteUrl ? `${siteUrl}${getPublicAssetPath("/")}` : undefined;
 const socialImage = siteUrl ? [`${siteUrl}${getPublicAssetPath("/og-image.svg")}`] : undefined;
 
 export const metadata: Metadata = {
   title: {
-    default: "Javier Martínez — Data Science & Software Engineering",
+    default: "Javier Martínez — Data Analyst Intern",
     template: "%s | Javier Martínez",
   },
   description: siteDescription,
@@ -25,13 +25,13 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_MX",
-    title: "Javier Martínez — Data Science & Software Engineering",
+    title: "Javier Martínez — Data Analyst Intern",
     description: siteDescription,
     ...(socialImage ? { images: socialImage } : {}),
   },
   twitter: {
     card: "summary_large_image",
-    title: "Javier Martínez — Data Science & Software Engineering",
+    title: "Javier Martínez — Data Analyst Intern",
     description: siteDescription,
     ...(socialImage ? { images: socialImage } : {}),
   },

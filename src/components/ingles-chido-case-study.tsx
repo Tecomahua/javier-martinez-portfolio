@@ -43,15 +43,15 @@ export function InglesChidoCaseStudy() {
           <div className="ingles-case-hero-grid">
             <div className="ingles-case-intro">
               <p className="eyebrow">
-                <span>01</span> / <LanguageText es="EDUCATIONAL DATA SCIENCE & LEARNING ANALYTICS" en="EDUCATIONAL DATA SCIENCE & LEARNING ANALYTICS" />
+                <span>02</span> / <LanguageText es="ANALÍTICA EDUCATIVA · LEARNING ANALYTICS" en="EDUCATIONAL DATA · LEARNING ANALYTICS" />
               </p>
               <h1>Inglés Chido<span>.</span></h1>
               <p className="ingles-case-subtitle">
                 <LanguageText es="Aprendizaje de inglés basado en evidencias" en="Evidence-based English learning" />
               </p>
               <p className="ingles-case-lede"><LanguageText es="Inglés Chido evoluciona hacia AELP, una plataforma de aprendizaje adaptativo. El prototipo registra intentos, respuestas y errores como base para evaluar el progreso y, más adelante, orientar la práctica." en="Inglés Chido is evolving into AELP, an adaptive learning platform. Its prototype records attempts, answers, and errors as a foundation for assessing progress and, later, guiding practice." /></p>
-              <div className="ingles-case-tags" aria-label="Tecnologías actuales y previstas / Current and planned technologies">
-                {["React Native", "Expo", "TypeScript", "Expo Router", "Python", "FastAPI", "PostgreSQL", "pandas", "SQLAlchemy", "Alembic"].map(
+              <div className="ingles-case-tags" aria-label="Tecnologías del prototipo y del ejemplo sintético / Prototype and synthetic example technologies">
+                {["React Native", "Expo", "TypeScript", "Expo Router", "Python · ejemplo sintético", "pandas · ejemplo sintético"].map(
                   (tag) => <span key={tag}>{tag}</span>,
                 )}
               </div>
@@ -183,8 +183,8 @@ export function InglesChidoCaseStudy() {
 
       <nav className="shell project-pagination" aria-label="Más proyectos / More projects">
         <Link href="/#proyectos"><ArrowLeft size={16} /> <LanguageText es="Todos los proyectos" en="All projects" /></Link>
-        <Link href="/proyectos/tutor-ia-nem/">
-          <div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>STI-NEM</strong></div>
+        <Link href="/proyectos/finscope-mexico/">
+          <div><small><LanguageText es="SIGUIENTE PROYECTO" en="NEXT PROJECT" /></small><strong>FinScope México</strong></div>
           <ArrowRight size={23} />
         </Link>
       </nav>

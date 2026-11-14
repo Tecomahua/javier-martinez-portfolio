@@ -30,13 +30,13 @@ export function HomeHero() {
           </h1>
 
           <p className={styles.specialization}>
-            Data Science <span aria-hidden="true">·</span> Software Engineering
+            Data Analyst Intern
           </p>
 
           <p className={styles.description}>
             <LanguageText
-              es="Busco prácticas profesionales a partir de enero de 2027 para contribuir en proyectos de Ciencia de Datos o Ingeniería de Software. Aporto pensamiento analítico y habilidades para desarrollar aplicaciones, con disposición para aprender y colaborar en un equipo tecnológico."
-              en="I am seeking a professional internship starting in January 2027, where I can contribute to Data Science or Software Engineering projects. I bring analytical thinking, application development experience, and a willingness to learn within a technology team."
+              es="Estudiante de Ingeniería en Sistemas Computacionales orientado al análisis de datos. En SPA Orizaba limpié y combiné fuentes públicas con Python y pandas para apoyar una decisión; también trabajo con SQL en proyectos de integración. Busco una residencia como Data Analyst Intern desde enero de 2027. Excel y Power BI forman parte de mi aprendizaje actual."
+              en="Computer Systems Engineering student focused on data analysis. In SPA Orizaba, I cleaned and combined public data with Python and pandas to support a decision; I also work with SQL in integration projects. I seek a Data Analyst Intern placement from January 2027. Excel and Power BI are part of my current learning path."
             />
           </p>
 
@@ -91,7 +91,7 @@ export function HomeHero() {
           <figcaption className={styles.photoCaption}>
             <span><LanguageText es="Objetivo profesional · 2027" en="Career goal · 2027" /></span>
             <strong><LanguageText es="Residencia profesional" en="Professional internship" /></strong>
-            <small>Data Science · Software Engineering</small>
+            <small>Data Analyst Intern · SQL · Python · pandas</small>
           </figcaption>
         </figure>
       </div>

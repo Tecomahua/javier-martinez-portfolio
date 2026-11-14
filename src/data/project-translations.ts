@@ -13,6 +13,9 @@ export const projectEnglish: Record<string, Partial<Project>> = {
       "A progressive mobile experience with a visual learning path, lessons, and local records of answers, mistakes, and review needs.",
     contribution:
       "I lead the product vision, learning experience, and mobile development, and define the strategy for turning learning records into analyzable evidence.",
+    method: "Local learning records; cleaning and grouping with Python/pandas in a separate synthetic exercise.",
+    finding: "The reproducible example processes 24 synthetic attempts; it does not measure real learners' mastery yet.",
+    evidence: "Public code, synthetic data, and tests; app-to-analytics integration is pending.",
     overview: [
       "Inglés Chido is evolving into AELP (Adaptive English Learning Platform), an evidence-based English-learning platform. Completing an activity does not demonstrate mastery; attempts, answers, and errors can provide signals for assessing difficulties and progress.",
       "The mobile prototype already keeps learning records and states locally. Integration with FastAPI and PostgreSQL is in development; processing with Python and pandas, mastery metrics, and personalization belong to later stages.",
@@ -36,6 +39,9 @@ export const projectEnglish: Record<string, Partial<Project>> = {
     problem: "Aggregate infrastructure counts are difficult to explore geographically and do not, by themselves, describe effective access.",
     solution: "A dashboard with municipal filters, a state map, rates per 10,000 adults and methodological context.",
     contribution: "Data preparation, indicator design and interactive experience development.",
+    method: "CNBV counts and rates per 10,000 adults; INEGI boundaries and OSM points for geographic exploration.",
+    finding: "In the screenshots, Álvaro Obregón has 2.49 branches per 10,000 adults versus 2.12 in Mexico City.",
+    evidence: "Screenshots and a public initial prototype; the national dashboard requires private access.",
     overview: ["The project examines financial infrastructure in 2,475 identified municipalities using CNBV data through December 2025."],
     implemented: ["State map and municipal filters.", "Rates per 10,000 adults and OpenStreetMap ATM points."],
     planned: ["Expand and validate ATM location sources and update official data."],
@@ -48,12 +54,15 @@ export const projectEnglish: Record<string, Partial<Project>> = {
     problem: "The system needs to connect educational interfaces to consistent relational data and backend services.",
     solution: "A Next.js frontend, NestJS API, and PostgreSQL through Prisma, with integrity checks on an isolated copy.",
     contribution: "I primarily developed teacher screens and supported services, adapters, and the database connection review alongside the team.",
+    method: "Interface and API contract integration; relational integrity checks on an isolated copy.",
+    finding: "The team log records 52 tables and 99 validated foreign keys; these are not production metrics.",
+    evidence: "Project log; no independent public audit yet.",
     overview: ["The project log records 52 tables, 26,805 records audited, and 99 foreign keys validated on an isolated copy; these are not production metrics.", "A team social-service project connected to a master's thesis at Mexico's National Technological Institute."],
     implemented: ["Teacher screens and services with adapters for API contracts.", "Integrity review, authorized Prisma migration, and API availability and route protection checks documented in the log."],
     planned: ["Complete the student tutoring adapter and partial academic data.", "Configure templates and test the generation worker on an isolated copy."],
   },
   "spa-orizaba": {
-    category: "Data Science · Commercial analysis",
+    category: "Data analysis · Commercial decision",
     role: "Technical data analysis",
     status: "Academic project · 2026",
     summary:
@@ -64,6 +73,9 @@ export const projectEnglish: Record<string, Partial<Project>> = {
       "A regional and neighborhood comparison combining economic, demographic, and business data into indicators and visualizations that guide the next field study.",
     contribution:
       "I led the technical work: sourcing, cleaning, transforming, and integrating datasets; preparing indicators and producing inputs for the team’s storytelling and communication.",
+    method: "Cleaned and joined ENIGH, DENUE, and ITER with Python/pandas; compared municipalities and city areas.",
+    finding: "The report prioritized downtown Orizaba for fieldwork without inferring proven sales or demand.",
+    evidence: "Report visuals are visible; the repository is private. The 77.4/100 score is not reproduced by the project code.",
     overview: [
       "An academic data science project assessing whether Orizaba showed favorable signals for an accessible mixed spa and where to begin looking for a location.",
       "The analysis combines state-level ENIGH 2024 economic context with DENUE business records and municipal demographics from the 2020 Population Census / ITER. The evidence helps prioritize options; it does not replace sales data or a field study.",

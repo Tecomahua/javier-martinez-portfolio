@@ -1,7 +1,7 @@
 export const profile = {
   name: "Javier Martínez",
   fullName: "Francisco Javier Martínez Tecomahua",
-  role: "Computer Systems Engineering Student | Data Science & Machine Learning",
+  role: "Computer Systems Engineering Student | Data Analyst Intern",
   institution: "Tecnológico Nacional de México — Instituto Tecnológico de Orizaba",
   degree: "Ingeniería en Sistemas Computacionales",
   semester: "Octavo semestre · etapa final de formación",
