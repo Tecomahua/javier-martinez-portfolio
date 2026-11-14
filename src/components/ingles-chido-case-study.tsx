@@ -239,6 +239,120 @@ const captures: AelpCapture[] = [
   }
 ];
 
+const additionalCaptures: AelpCapture[] = [
+  {
+    file: "14.webp",
+    title: "Lección · Preséntate",
+    description: "Vista de una lección situada dentro del mapa de aprendizaje.",
+    alt: "Mapa de aprendizaje con la tarjeta de la lección Preséntate.",
+    category: "Ruta y lecciones",
+  },
+  {
+    file: "15.webp",
+    title: "Lección · Objetos y colores",
+    description: "Vista de una lección de vocabulario contextualizada en la ruta.",
+    alt: "Mapa de aprendizaje con la tarjeta de la lección Objetos y colores.",
+    category: "Ruta y lecciones",
+  },
+  {
+    file: "16.webp",
+    title: "Lección · Abecedario",
+    description: "Acceso a la lección del abecedario desde el recorrido A1.",
+    alt: "Mapa de aprendizaje con la tarjeta de la lección Abecedario.",
+    category: "Ruta y lecciones",
+  },
+  {
+    file: "17.webp",
+    title: "Lección: el abecedario",
+    description:
+      "Portada audiovisual de una lección A1 con controles y avance por pasos.",
+    alt: "Lección del abecedario en la aplicación Inglés Chido.",
+    reference: "Lessons · lesson-screen.tsx",
+    category: "Ruta y lecciones",
+  },
+  {
+    file: "17_1.webp",
+    title: "Práctica de deletreo y escritura",
+    description: "Ejemplo visual para relacionar palabras, animales y su escritura.",
+    alt: "Actividad de aprendizaje con las palabras dog y cat y una libreta para practicar escritura.",
+    category: "Ruta y lecciones",
+  },
+  {
+    file: "18.webp",
+    title: "Práctica de vocales",
+    description:
+      "Actividad guiada para escuchar, repetir y practicar pronunciación.",
+    alt: "Actividad de vocales con audio, guía de pronunciación y control de repetición.",
+    reference: "Lessons · vowels-step.tsx",
+    category: "Escucha y práctica",
+  },
+  {
+    file: "19.webp",
+    title: "Reconocimiento auditivo",
+    description: "Escucha una vocal y elige la letra que corresponde al sonido.",
+    alt: "Actividad para identificar una vocal a partir de su pronunciación.",
+    category: "Escucha y práctica",
+  },
+  {
+    file: "20.webp",
+    title: "Práctica de consonantes",
+    description: "Presentación de una consonante con controles para escuchar y repetir.",
+    alt: "Lección de consonantes con audio, pronunciación y opciones de práctica.",
+    category: "Escucha y práctica",
+  },
+  {
+    file: "10.webp",
+    title: "Repaso",
+    description: "Resumen de áreas que pueden requerir práctica adicional.",
+    alt: "Pantalla de repaso con apartados de patrones, vocabulario y habilidades.",
+    category: "Repaso y vocabulario",
+  },
+  {
+    file: "11.webp",
+    title: "Vocabulario",
+    description: "Consulta de palabras guardadas y formulario para añadir vocabulario.",
+    alt: "Pantalla de vocabulario con búsqueda, filtros y opción para agregar palabras.",
+    category: "Repaso y vocabulario",
+  },
+  {
+    file: "22.webp",
+    title: "Repaso · tema oscuro",
+    description: "Vista del módulo de repaso con el tema oscuro activo.",
+    alt: "Módulo de repaso de Inglés Chido en tema oscuro.",
+    category: "Repaso y vocabulario",
+  },
+  {
+    file: "22_1.webp",
+    title: "Áreas de repaso · tema oscuro",
+    description: "Apartados de práctica y contenido por reforzar en tema oscuro.",
+    alt: "Lista de áreas de repaso en la interfaz oscura de Inglés Chido.",
+    category: "Repaso y vocabulario",
+  },
+  {
+    file: "22_2.webp",
+    title: "Vocabulario · tema oscuro",
+    description: "Consulta y práctica de vocabulario con el tema oscuro activo.",
+    alt: "Pantalla de vocabulario en tema oscuro con una palabra guardada.",
+    category: "Repaso y vocabulario",
+  },
+  {
+    file: "12.webp",
+    title: "Progreso por habilidad",
+    description:
+      "Vista local del nivel y del estado de evidencia para distintas habilidades.",
+    alt: "Módulo de progreso con habilidades lingüísticas y estado de evidencia.",
+    reference: "Progress · progress-screen.tsx",
+    category: "Progreso",
+  },
+  {
+    file: "22_3.webp",
+    title: "Progreso por habilidad · tema oscuro",
+    description: "Vista del progreso con el tema oscuro activo.",
+    alt: "Progreso por habilidad en la interfaz oscura de Inglés Chido.",
+    category: "Progreso",
+  },
+];
+
 const mobileStack = [
   ["React Native", "Interfaces móviles multiplataforma."],
   ["Expo", "Runtime, herramientas y empaquetado de la app."],
@@ -321,6 +435,12 @@ export function InglesChidoCaseStudy() {
             <p><LanguageText es="Capturas del prototipo móvil actual. Selecciona una para ampliarla." en="Screenshots from the current mobile prototype. Select one to enlarge it." /></p>
           </div>
           <AelpCaptureGallery captures={captures} mobileShowcase />
+          <div className="ingles-more-screens">
+            <p className="eyebrow"><LanguageText es="MÁS PANTALLAS" en="MORE SCREENS" /></p>
+            <h3><LanguageText es="Lecciones, repaso y progreso" en="Lessons, review, and progress" /></h3>
+            <p><LanguageText es="Explora otras funciones del prototipo." en="Explore more features from the prototype." /></p>
+            <AelpCaptureGallery captures={additionalCaptures} />
+          </div>
         </div>
       </section>
 
