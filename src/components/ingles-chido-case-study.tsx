@@ -50,8 +50,8 @@ export function InglesChidoCaseStudy() {
                 <LanguageText es="Aprendizaje de inglés basado en evidencias" en="Evidence-based English learning" />
               </p>
               <p className="ingles-case-lede"><LanguageText es="Inglés Chido evoluciona hacia AELP, una plataforma de aprendizaje adaptativo. El prototipo registra intentos, respuestas y errores como base para evaluar el progreso y, más adelante, orientar la práctica." en="Inglés Chido is evolving into AELP, an adaptive learning platform. Its prototype records attempts, answers, and errors as a foundation for assessing progress and, later, guiding practice." /></p>
-              <div className="ingles-case-tags" aria-label="Tecnologías móviles / Mobile technologies">
-                {["React Native", "Expo", "TypeScript", "Expo Router"].map(
+              <div className="ingles-case-tags" aria-label="Tecnologías actuales y previstas / Current and planned technologies">
+                {["React Native", "Expo", "TypeScript", "Expo Router", "Python", "FastAPI", "PostgreSQL", "pandas", "SQLAlchemy", "Alembic"].map(
                   (tag) => <span key={tag}>{tag}</span>,
                 )}
               </div>
