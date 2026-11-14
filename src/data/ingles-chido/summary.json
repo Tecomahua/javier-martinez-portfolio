@@ -1,0 +1,23 @@
+{
+  "total_attempts": 24,
+  "skills": [
+    {
+      "skill": "grammar",
+      "correct": 5,
+      "attempts": 8,
+      "percent": 62.5
+    },
+    {
+      "skill": "listening",
+      "correct": 3,
+      "attempts": 8,
+      "percent": 37.5
+    },
+    {
+      "skill": "vocabulary",
+      "correct": 6,
+      "attempts": 8,
+      "percent": 75.0
+    }
+  ]
+}
