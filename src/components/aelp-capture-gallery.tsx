@@ -67,10 +67,10 @@ export function AelpCaptureGallery({
       new Set(activeCaptures.map((capture) => capture.category).filter(Boolean)),
     ) as string[];
     return [
-      {
+      ...(!mobileShowcase ? [{
         key: "__all__",
         label: language === "es" ? "Todas" : "All",
-      },
+      }] : []),
       ...sourceCategories.map((sourceCategory) => {
         const example = activeCaptures.find((capture) => capture.category === sourceCategory);
         return {
@@ -79,7 +79,7 @@ export function AelpCaptureGallery({
         };
       }),
     ];
-  }, [activeCaptures, language]);
+  }, [activeCaptures, language, mobileShowcase]);
 
   const filteredCaptures = useMemo(() => {
     if (selectedCategory === "__all__") return activeCaptures;
@@ -137,23 +137,23 @@ export function AelpCaptureGallery({
       {categories.length > 1 && (
         <div
           className="aelp-gallery-filters"
-          role="tablist"
+          role={mobileShowcase ? "group" : "tablist"}
           aria-label={language === "es" ? "Filtrar capturas por categoría" : "Filter captures by category"}
         >
           {categories.map((category) => {
-            const count =
-              category.key === "__all__"
-              ? activeCaptures.length
+            const count = category.key === "__all__"
+                ? activeCaptures.length
                 : activeCaptures.filter((capture) => capture.category === category.key).length;
             const isSelected = selectedCategory === category.key;
             return (
               <button
                 key={category.key}
                 type="button"
-                role="tab"
-                aria-selected={isSelected}
+                role={mobileShowcase ? undefined : "tab"}
+                aria-selected={mobileShowcase ? undefined : isSelected}
+                aria-pressed={mobileShowcase ? isSelected : undefined}
                 className={`aelp-gallery-filter${isSelected ? " aelp-gallery-filter-active" : ""}`}
-                onClick={() => setSelectedCategory(category.key)}
+                onClick={() => setSelectedCategory(mobileShowcase && isSelected ? "__all__" : category.key)}
               >
                 {category.label} <span>({count})</span>
               </button>

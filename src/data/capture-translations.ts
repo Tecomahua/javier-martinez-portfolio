@@ -3,9 +3,6 @@ import type { AelpCapture } from "@/components/aelp-capture-gallery";
 type CaptureEnglish = Pick<AelpCapture, "titleEn" | "descriptionEn" | "altEn" | "categoryEn">;
 
 export const captureEnglish: Record<string, CaptureEnglish> = {
-  "14.webp": { titleEn: "Lesson · Introduce yourself", descriptionEn: "A lesson view placed within the learning map.", altEn: "Learning map with the Introduce Yourself lesson card.", categoryEn: "Learning path & lessons" },
-  "15.webp": { titleEn: "Lesson · Objects and colors", descriptionEn: "A vocabulary lesson set within the learning path.", altEn: "Learning map with the Objects and Colors lesson card.", categoryEn: "Learning path & lessons" },
-  "16.webp": { titleEn: "Lesson · Alphabet", descriptionEn: "Entry to the alphabet lesson from the A1 path.", altEn: "Learning map with access to the alphabet lesson.", categoryEn: "Learning path & lessons" },
   "17.webp": { titleEn: "Lesson: The alphabet", descriptionEn: "An audiovisual A1 lesson cover with controls and step navigation.", altEn: "Alphabet lesson in the Inglés Chido app.", categoryEn: "Learning path & lessons" },
   "17_1.webp": { titleEn: "Spelling and writing practice", descriptionEn: "A visual activity connecting words, animals, and written practice.", altEn: "Learning activity with the words dog and cat and a notebook for writing practice.", categoryEn: "Learning path & lessons" },
   "18.webp": { titleEn: "Vowel practice", descriptionEn: "A guided activity for listening, repeating, and practicing pronunciation.", altEn: "Vowel activity with audio, pronunciation guidance, and a repeat control.", categoryEn: "Listening & practice" },
@@ -16,8 +13,6 @@ export const captureEnglish: Record<string, CaptureEnglish> = {
   "22.webp": { titleEn: "Review · dark theme", descriptionEn: "The review module displayed in dark theme.", altEn: "Inglés Chido review module in dark theme.", categoryEn: "Review & vocabulary" },
   "22_1.webp": { titleEn: "Review areas · dark theme", descriptionEn: "Practice sections and content to revisit in dark theme.", altEn: "List of review areas in the dark Inglés Chido interface.", categoryEn: "Review & vocabulary" },
   "22_2.webp": { titleEn: "Vocabulary · dark theme", descriptionEn: "Browse and practice vocabulary in dark theme.", altEn: "Vocabulary screen with a saved word in dark theme.", categoryEn: "Review & vocabulary" },
-  "12.webp": { titleEn: "Progress by skill", descriptionEn: "A local view of skill levels and evidence status.", altEn: "Progress module showing language skills and evidence status.", categoryEn: "Progress" },
-  "22_3.webp": { titleEn: "Progress by skill · dark theme", descriptionEn: "The progress view in dark theme.", altEn: "Progress by skill in the dark interface.", categoryEn: "Progress" },
   "dashboard-docente.png": { titleEn: "Teacher dashboard", descriptionEn: "Home panel with teacher-module shortcuts, recent activity, and academic indicators.", altEn: "STI-NEM teacher dashboard; personal names and figures have been anonymized.", categoryEn: "Teachers" },
   "grupos.png": { titleEn: "Class management", descriptionEn: "Browse classes with filters for grade and school year.", altEn: "Class list with filters and cards; student counts have been hidden.", categoryEn: "Teachers" },
   "detalle-grupo.png": { titleEn: "Class details and settings", descriptionEn: "Challenge settings and participant list, with names and aliases anonymized.", altEn: "Class details, settings, and table; names and aliases have been anonymized.", categoryEn: "Teachers" },
