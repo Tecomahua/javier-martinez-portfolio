@@ -512,34 +512,6 @@ export function InglesChidoCaseStudy() {
             <article><span>02</span><h3><LanguageText es="En desarrollo" en="In development" /></h3><p><LanguageText es="Base FastAPI y preparación de la integración para llevar evidencias a una persistencia centralizada." en="FastAPI foundation and integration work to move learning evidence into centralized storage." /></p></article>
             <article><span>03</span><h3><LanguageText es="Planeado" en="Planned" /></h3><p><LanguageText es="Indicadores de dominio, detección de patrones y recomendaciones para adaptar la práctica." en="Mastery indicators, pattern detection, and recommendations to adapt practice." /></p></article>
           </div>
-          <aside className="ingles-case-data-note" aria-labelledby="ingles-case-data-note-title">
-            <div className="ingles-case-data-note-heading">
-              <span className="ingles-case-data-note-status"><LanguageText es="HOJA DE RUTA" en="ROADMAP" /></span>
-              <h3 id="ingles-case-data-note-title">
-                <LanguageText es="Learning Analytics: tres etapas de evolución" en="Learning analytics: three stages of development" />
-              </h3>
-            </div>
-            <div className="ingles-case-data-note-copy">
-              <p>
-                <LanguageText
-                  es="1. Captura local implementada: el prototipo conserva intentos, respuestas, errores y necesidades de repaso dentro de la app. Estos registros describen la práctica, pero todavía no producen indicadores analíticos de dominio."
-                  en="1. Implemented local capture: the prototype keeps attempts, answers, errors, and review needs within the app. These records describe practice but do not yet produce analytical mastery indicators."
-                />
-              </p>
-              <p>
-                <LanguageText
-                  es="2. Integración de datos en desarrollo: la base FastAPI y PostgreSQL busca reunir evidencias entre sesiones. El procesamiento con Python y pandas todavía está previsto, no integrado al flujo móvil."
-                  en="2. Data integration in development: the FastAPI and PostgreSQL foundation aims to bring evidence together across sessions. Processing with Python and pandas is still planned and is not integrated into the mobile flow."
-                />
-              </p>
-              <p>
-                <LanguageText
-                  es="3. Analítica adaptativa planificada: calcular métricas de dominio, identificar dificultades y patrones, explorar modelos predictivos y recomendar práctica según el progreso. Aún no hay modelos entrenados ni recomendaciones automáticas en producción."
-                  en="3. Planned adaptive analytics: calculate mastery metrics, identify difficulties and patterns, explore predictive models, and recommend practice based on progress. There are no trained models or production recommendations yet."
-                />
-              </p>
-            </div>
-          </aside>
         </div>
       </section>
 
