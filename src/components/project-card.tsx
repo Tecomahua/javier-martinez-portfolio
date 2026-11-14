@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import { getPublicAssetPath } from "@/lib/site-url";
 import { ArrowUpRight, Plus } from "lucide-react";
 import type { Project } from "@/data/projects";
 import { InglesChidoCover } from "@/components/ingles-chido-cover";
@@ -44,7 +46,9 @@ export function ProjectCard({ project }: { project: Project }) {
         )}
       </div>
       <div className="project-visual">
-        {project.slug === "ingles-chido" ? (
+        {project.slug === "finscope-mexico" ? (
+          <figure className="sti-browser-frame"><div className="sti-browser-toolbar" aria-hidden="true"><i /><i /><i /><span>FINSCOPE · MÉXICO</span></div><Image src={getPublicAssetPath("/images/finscope/mapa-nacional.jpg")} alt="" width={1032} height={829} sizes="(max-width: 700px) 90vw, 520px" style={{width:"100%",height:"auto",display:"block"}} unoptimized /></figure>
+        ) : project.slug === "ingles-chido" ? (
           <InglesChidoCover />
         ) : project.slug === "tutor-ia-nem" ? (
           <StiNemBrowserFrame className="sti-card-browser-frame" showCaption={false} />

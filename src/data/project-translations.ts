@@ -28,6 +28,18 @@ export const projectEnglish: Record<string, Partial<Project>> = {
       "Identify difficulty patterns, explore predictive models, and recommend adaptive practice; there are no trained models or production recommendations yet.",
     ],
   },
+  "finscope-mexico": {
+    category: "Data analysis · Financial inclusion",
+    role: "Data analysis and dashboard development",
+    status: "Functional prototype · private access",
+    summary: "A national financial infrastructure explorer combining CNBV data, INEGI boundaries and OpenStreetMap ATM points.",
+    problem: "Aggregate infrastructure counts are difficult to explore geographically and do not, by themselves, describe effective access.",
+    solution: "A dashboard with municipal filters, a state map, rates per 10,000 adults and methodological context.",
+    contribution: "Data preparation, indicator design and interactive experience development.",
+    overview: ["The project examines financial infrastructure in 2,475 identified municipalities using CNBV data through December 2025."],
+    implemented: ["State map and municipal filters.", "Rates per 10,000 adults and OpenStreetMap ATM points."],
+    planned: ["Expand and validate ATM location sources and update official data."],
+  },
   "tutor-ia-nem": {
     category: "Educational Technology · AI Tutoring",
     role: "Frontend developer · teacher module",
