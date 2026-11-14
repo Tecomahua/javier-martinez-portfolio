@@ -49,6 +49,9 @@
 .browser i { height: 7px; width: 7px; border-radius: 50%; background: var(--fs-accent); }
 .browser span { margin-left: 10px; color: var(--fs-muted); font-size: .7rem; }
 .screenshot img { display: block; width: 100%; height: auto; }
+.captureLink { display: block; color: var(--fs-accent); text-decoration: none; }
+.captureLink > span { display: inline-flex; align-items: center; gap: .35rem; padding: .45rem 1.3rem; font-size: .76rem; font-weight: 600; }
+.captureLink:hover > span { text-decoration: underline; text-underline-offset: .2em; }
 .screenshot figcaption { padding: 1rem 1.3rem; color: var(--fs-muted); font-size: .8rem; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .features article { padding: 1.4rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }

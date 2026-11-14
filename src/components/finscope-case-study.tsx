@@ -16,7 +16,10 @@ function Capture({ file, width, height, label, alt, captionEs, captionEn }: {
 }) {
   return <figure className={styles.screenshot}>
     <div className={styles.browser} aria-hidden="true"><i/><i/><i/><span>{label}</span></div>
-    <Image src={getPublicAssetPath(`/images/finscope/${file}`)} alt={alt} width={width} height={height} sizes="(max-width: 700px) 90vw, 1120px" unoptimized />
+    <a className={styles.captureLink} href={getPublicAssetPath(`/images/finscope/${file}`)} target="_blank" rel="noreferrer">
+      <Image src={getPublicAssetPath(`/images/finscope/${file}`)} alt={alt} width={width} height={height} sizes="(max-width: 700px) 90vw, 1120px" unoptimized />
+      <span><T es="Abrir captura a tamaño completo" en="Open full-size capture"/> <ArrowUpRight size={15}/></span>
+    </a>
     <figcaption><T es={captionEs} en={captionEn}/></figcaption>
   </figure>;
 }
