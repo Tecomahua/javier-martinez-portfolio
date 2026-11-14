@@ -55,6 +55,15 @@
 .screenshot figcaption { padding: 1rem 1.3rem; color: var(--fs-muted); font-size: .8rem; }
 .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .features article { padding: 1.4rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }
+.features details { padding: 1.15rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }
+.features summary, .methodFlow summary, .methodNarrative summary { cursor: pointer; list-style: none; }
+.features summary::-webkit-details-marker, .methodFlow summary::-webkit-details-marker, .methodNarrative summary::-webkit-details-marker { display: none; }
+.features summary { display: flex; align-items: center; gap: .8rem; }
+.features summary svg { flex: 0 0 auto; }
+.features summary span { display: grid; gap: .2rem; }
+.features summary strong { font-size: 1rem; }
+.features summary small { color: var(--fs-soft); font-size: .73rem; }
+.features details[open] summary { margin-bottom: .65rem; }
 .features svg, .limit svg { color: var(--fs-accent); }
 .features h3 { margin: .8rem 0 .3rem; }
 .features p { font-size: .9rem; margin: 0; }
@@ -73,9 +82,18 @@
 }
 
 .methodFlow { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; margin-top: 2.2rem; }
-.methodFlow span { padding: 1rem; border: 1px solid var(--fs-border); border-radius: 10px; background: var(--fs-surface); color: var(--fs-text); font-size: .83rem; font-weight: 600; }
-.methodFlow span::before { content: counter(step, decimal-leading-zero); counter-increment: step; display: block; margin-bottom: .45rem; color: var(--fs-accent); font: .75rem var(--mono-font); }
+.methodFlow details { min-width: 0; padding: 1rem; border: 1px solid var(--fs-border); border-radius: 10px; background: var(--fs-surface); }
+.methodFlow summary { display: grid; gap: .45rem; }
+.methodFlow summary > span { color: var(--fs-accent); font: .75rem var(--mono-font); }
+.methodFlow summary strong { font-size: .83rem; }
+.methodFlow details[open] summary { margin-bottom: .55rem; }
+.methodFlow p { margin: 0; font-size: .8rem; }
 .methodFlow { counter-reset: step; }
+.methodNarrative { align-self: start; }
+.methodNarrative summary { display: inline-flex; align-items: center; padding: .7rem .85rem; border: 1px solid var(--fs-border); border-radius: 8px; color: var(--fs-accent); font-size: .82rem; font-weight: 600; }
+.methodNarrative summary::after { content: "+"; margin-left: .7rem; font-size: 1rem; }
+.methodNarrative[open] summary::after { content: "–"; }
+.methodNarrative > div { padding-top: .75rem; }
 .findings { display: grid; gap: 1rem; }
 .findings article { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; padding: 1.6rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }
 .findings article > span { color: var(--fs-accent); font: .9rem var(--mono-font); }
@@ -85,4 +103,7 @@
 @media (max-width: 700px) {
   .methodFlow { grid-template-columns: repeat(2, 1fr); }
   .findings article { grid-template-columns: 1fr; gap: .4rem; }
+  .features { grid-template-columns: 1fr; }
+  .section h2 { font-size: clamp(1.8rem, 9vw, 2.5rem); }
+  .section p { line-height: 1.6; }
 }
