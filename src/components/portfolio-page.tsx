@@ -171,13 +171,13 @@ export function PortfolioPage() {
               { title: "Excel Basics for Data Analysis", issuer: "IBM · Coursera", href: "/certificates/coursera-1a3df3oetj0j.pdf" },
               { title: "Introduction to Data Analytics", issuer: "IBM · Coursera", href: "/certificates/coursera-4tc1uninet65.pdf" },
               { title: "Data Visualization and Dashboards with Excel and Cognos", issuer: "IBM · Coursera", href: "/certificates/coursera-k311rbbqbk98.pdf" },
-              { title: "Creación de dashboards interactivos en Excel utilizando Python", issuer: "Certificado de formación", href: "/certificates/dashboards-python-excel.pdf" },
-              { title: "SQL básico", issuer: "Certificado de formación", href: "/certificates/sql-basic-certificate.pdf" },
-            ].map(({ title, issuer, href }) => (
+              { title: "Creación de dashboards interactivos en Excel utilizando Python", issuer: "Certificado de formación", issuerEn: "Training certificate", href: "/certificates/dashboards-python-excel.pdf" },
+              { title: "SQL básico", issuer: "Certificado de formación", issuerEn: "Training certificate", href: "/certificates/sql-basic-certificate.pdf" },
+            ].map(({ title, issuer, issuerEn, href }, index) => (
               <article className="certificate-card" key={href}>
                 <span className="certificate-icon" aria-hidden="true"><FileBadge size={21} /></span>
-                <div className="certificate-card-copy"><span>{issuer}</span><h3>{title}</h3></div>
-                <a className="certificate-view-link" href={getPublicAssetPath(href)} target="_blank" rel="noreferrer" aria-label={`Ver certificado: ${title}`}><Eye size={16} aria-hidden="true" /><LanguageText es="Ver certificado" en="View certificate" /><ArrowUpRight size={15} aria-hidden="true" /></a>
+                <div className="certificate-card-copy"><span><LanguageText es={issuer} en={issuerEn ?? issuer} /></span><h3 id={`certificate-title-${index}`}>{title}</h3></div>
+                <a className="certificate-view-link" href={getPublicAssetPath(href)} target="_blank" rel="noreferrer" aria-labelledby={`certificate-action-${index} certificate-title-${index}`}><Eye size={16} aria-hidden="true" /><span id={`certificate-action-${index}`}><LanguageText es="Ver certificado" en="View certificate" /></span><ArrowUpRight size={15} aria-hidden="true" /></a>
               </article>
             ))}
           </div>
@@ -193,7 +193,7 @@ export function PortfolioPage() {
         <div className="shell contact-layout">
           <div className="contact-copy" data-reveal>
             <p className="eyebrow">
-              <span>05</span> / <LanguageText es="SIGUIENTE PASO" en="NEXT STEP" />
+              <span>06</span> / <LanguageText es="SIGUIENTE PASO" en="NEXT STEP" />
             </p>
             <h2>
               <LanguageText es="¿Construimos algo" en="Shall we build something" />
