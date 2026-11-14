@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { X } from "lucide-react";
+import { Moon, Sun, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLanguage } from "@/components/language-provider";
 import { captureEnglish } from "@/data/capture-translations";
@@ -31,22 +31,37 @@ function getCaptureCategory(capture: AelpCapture, language: "es" | "en") {
 export function AelpCaptureGallery({
   captures,
   variant = "mobile",
+  mobileShowcase = false,
   imageBasePath = getPublicAssetPath("/images/ingles-chido"),
 }: {
   captures: AelpCapture[];
   variant?: "mobile" | "desktop";
+  mobileShowcase?: boolean;
   imageBasePath?: string;
 }) {
   const isDesktop = variant === "desktop";
   const { language } = useLanguage();
   const [selectedCategory, setSelectedCategory] = useState<string>("__all__");
+  const [showcaseTheme, setShowcaseTheme] = useState<"claro" | "oscuro">("claro");
   const [selected, setSelected] = useState<AelpCapture | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement | null>(null);
 
+  const activeCaptures = useMemo(() => {
+    if (!mobileShowcase) return captures;
+    const chosen = new Map<string, AelpCapture>();
+    for (const capture of captures) {
+      const key = capture.file.replace(/-(claro|oscuro)\.jpeg$/, "");
+      if (!chosen.has(key) || capture.file.endsWith(`-${showcaseTheme}.jpeg`)) {
+        chosen.set(key, capture);
+      }
+    }
+    return [...chosen.values()];
+  }, [captures, mobileShowcase, showcaseTheme]);
+
   const categories = useMemo(() => {
     const sourceCategories = Array.from(
-      new Set(captures.map((capture) => capture.category).filter(Boolean)),
+      new Set(activeCaptures.map((capture) => capture.category).filter(Boolean)),
     ) as string[];
     return [
       {
@@ -54,19 +69,19 @@ export function AelpCaptureGallery({
         label: language === "es" ? "Todas" : "All",
       },
       ...sourceCategories.map((sourceCategory) => {
-        const example = captures.find((capture) => capture.category === sourceCategory);
+        const example = activeCaptures.find((capture) => capture.category === sourceCategory);
         return {
           key: sourceCategory,
           label: example ? getCaptureCategory(example, language) ?? sourceCategory : sourceCategory,
         };
       }),
     ];
-  }, [captures, language]);
+  }, [activeCaptures, language]);
 
   const filteredCaptures = useMemo(() => {
-    if (selectedCategory === "__all__") return captures;
-    return captures.filter((capture) => capture.category === selectedCategory);
-  }, [captures, selectedCategory]);
+    if (selectedCategory === "__all__") return activeCaptures;
+    return activeCaptures.filter((capture) => capture.category === selectedCategory);
+  }, [activeCaptures, selectedCategory]);
 
   function captureTitle(capture: AelpCapture) {
     return language === "en" ? capture.titleEn ?? captureEnglish[capture.file]?.titleEn ?? capture.title : capture.title;
@@ -104,6 +119,18 @@ export function AelpCaptureGallery({
 
   return (
     <>
+      {mobileShowcase && (
+        <div className="mobile-showcase-toolbar">
+          <div>
+            <strong>{language === "es" ? "Explora la app" : "Explore the app"}</strong>
+            <span>{language === "es" ? "Cambia el tema para ver cada pantalla como en tu teléfono." : "Switch themes to see each screen as it appears on your phone."}</span>
+          </div>
+          <div className="mobile-showcase-switch" role="group" aria-label={language === "es" ? "Tema de las capturas" : "Screenshot theme"}>
+            <button type="button" aria-pressed={showcaseTheme === "claro"} onClick={() => { setShowcaseTheme("claro"); setSelected(null); }}><Sun size={16} />{language === "es" ? "Claro" : "Light"}</button>
+            <button type="button" aria-pressed={showcaseTheme === "oscuro"} onClick={() => { setShowcaseTheme("oscuro"); setSelected(null); }}><Moon size={16} />{language === "es" ? "Oscuro" : "Dark"}</button>
+          </div>
+        </div>
+      )}
       {categories.length > 1 && (
         <div
           className="aelp-gallery-filters"
@@ -113,8 +140,8 @@ export function AelpCaptureGallery({
           {categories.map((category) => {
             const count =
               category.key === "__all__"
-                ? captures.length
-                : captures.filter((capture) => capture.category === category.key).length;
+              ? activeCaptures.length
+                : activeCaptures.filter((capture) => capture.category === category.key).length;
             const isSelected = selectedCategory === category.key;
             return (
               <button
@@ -132,12 +159,12 @@ export function AelpCaptureGallery({
         </div>
       )}
 
-      <div className={`aelp-gallery${isDesktop ? " aelp-gallery-desktop" : ""}`}>
+      <div className={`aelp-gallery${isDesktop ? " aelp-gallery-desktop" : ""}${mobileShowcase ? ` mobile-showcase-gallery mobile-showcase-${showcaseTheme}` : ""}`}>
         {filteredCaptures.map((capture) => (
           <article className="aelp-gallery-item" key={capture.file}>
             <button
               type="button"
-              className={`aelp-gallery-image${isDesktop ? " aelp-gallery-image-desktop" : ""}`}
+              className={`aelp-gallery-image${isDesktop ? " aelp-gallery-image-desktop" : ""}${mobileShowcase ? " mobile-showcase-phone" : ""}`}
               onClick={(event) => {
                 triggerRef.current = event.currentTarget;
                 setSelected(capture);
@@ -164,7 +191,7 @@ export function AelpCaptureGallery({
               {capture.reference && (
                 <p className="aelp-gallery-reference">{capture.reference}</p>
               )}
-              <h3>{captureTitle(capture)}</h3>
+              <h3>{mobileShowcase ? captureTitle(capture).replace(/ · (tema claro|tema oscuro|light theme|dark theme)$/, "") : captureTitle(capture)}</h3>
               <p>{captureDescription(capture)}</p>
             </div>
           </article>
