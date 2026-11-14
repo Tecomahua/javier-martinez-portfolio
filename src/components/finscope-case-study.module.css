@@ -68,3 +68,18 @@
   .section { padding: 3rem 0; }
   .footer { flex-wrap: wrap; }
 }
+
+.methodFlow { display: grid; grid-template-columns: repeat(4, 1fr); gap: .75rem; margin-top: 2.2rem; }
+.methodFlow span { padding: 1rem; border: 1px solid var(--fs-border); border-radius: 10px; background: var(--fs-surface); color: var(--fs-text); font-size: .83rem; font-weight: 600; }
+.methodFlow span::before { content: counter(step, decimal-leading-zero); counter-increment: step; display: block; margin-bottom: .45rem; color: var(--fs-accent); font: .75rem var(--mono-font); }
+.methodFlow { counter-reset: step; }
+.findings { display: grid; gap: 1rem; }
+.findings article { display: grid; grid-template-columns: 3.2rem 1fr; gap: 1rem; padding: 1.6rem; border: 1px solid var(--fs-border); border-radius: 12px; background: var(--fs-surface); }
+.findings article > span { color: var(--fs-accent); font: .9rem var(--mono-font); }
+.findings h3 { margin: 0 0 .35rem; font-size: 1.15rem; }
+.findings p { margin: 0; }
+.sources a { color: var(--fs-accent); text-decoration: underline; text-underline-offset: .2em; }
+@media (max-width: 700px) {
+  .methodFlow { grid-template-columns: repeat(2, 1fr); }
+  .findings article { grid-template-columns: 1fr; gap: .4rem; }
+}
