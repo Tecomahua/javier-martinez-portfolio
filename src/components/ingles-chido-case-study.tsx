@@ -242,27 +242,6 @@ const captures: AelpCapture[] = [
   {"file": "micamino-gustos-claro.webp", "title": "Mi camino · Gustos y hábitos", "description": "Vista de una lección futura en el mapa de aprendizaje.", "alt": "Mi camino · Gustos y hábitos en tema claro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Likes and habits", "descriptionEn": "A future lesson shown on the learning map.", "altEn": "My path · Likes and habits in light theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
   {"file": "micamino-gustos-oscuro.webp", "title": "Mi camino · Gustos y hábitos", "description": "Vista de una lección futura en el mapa de aprendizaje.", "alt": "Mi camino · Gustos y hábitos en tema oscuro.", "category": "Ruta de aprendizaje", "titleEn": "My path · Likes and habits", "descriptionEn": "A future lesson shown on the learning map.", "altEn": "My path · Likes and habits in dark theme.", "categoryEn": "Learning path", "width": 592, "height": 1280},
   {
-    file: "14.webp",
-    title: "Lección · Preséntate",
-    description: "Vista de una lección situada dentro del mapa de aprendizaje.",
-    alt: "Mapa de aprendizaje con la tarjeta de la lección Preséntate.",
-    category: "Ruta y lecciones",
-  },
-  {
-    file: "15.webp",
-    title: "Lección · Objetos y colores",
-    description: "Vista de una lección de vocabulario contextualizada en la ruta.",
-    alt: "Mapa de aprendizaje con la tarjeta de la lección Objetos y colores.",
-    category: "Ruta y lecciones",
-  },
-  {
-    file: "16.webp",
-    title: "Lección · Abecedario",
-    description: "Acceso a la lección del abecedario desde el recorrido A1.",
-    alt: "Mapa de aprendizaje con la tarjeta de la lección Abecedario.",
-    category: "Ruta y lecciones",
-  },
-  {
     file: "17.webp",
     title: "Lección: el abecedario",
     description:
@@ -345,26 +324,6 @@ const captures: AelpCapture[] = [
     description: "Consulta y práctica de vocabulario con el tema oscuro activo.",
     alt: "Pantalla de vocabulario en tema oscuro con una palabra guardada.",
     category: "Repaso y vocabulario",
-  },
-  {
-    file: "12.webp",
-    screenKey: "progreso",
-    themeVariant: "claro",
-    title: "Progreso por habilidad",
-    description:
-      "Vista local del nivel y del estado de evidencia para distintas habilidades.",
-    alt: "Módulo de progreso con habilidades lingüísticas y estado de evidencia.",
-    reference: "Progress · progress-screen.tsx",
-    category: "Progreso",
-  },
-  {
-    file: "22_3.webp",
-    screenKey: "progreso",
-    themeVariant: "oscuro",
-    title: "Progreso por habilidad · tema oscuro",
-    description: "Vista del progreso con el tema oscuro activo.",
-    alt: "Progreso por habilidad en la interfaz oscura de Inglés Chido.",
-    category: "Progreso",
   },
 ];
 
