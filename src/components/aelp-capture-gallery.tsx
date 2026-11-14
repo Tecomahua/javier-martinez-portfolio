@@ -43,7 +43,7 @@ export function AelpCaptureGallery({
 }) {
   const isDesktop = variant === "desktop";
   const { language } = useLanguage();
-  const [selectedCategory, setSelectedCategory] = useState<string>("__all__");
+  const [selectedCategory, setSelectedCategory] = useState<string>(mobileShowcase ? "Inicio" : "__all__");
   const [showcaseTheme, setShowcaseTheme] = useState<"claro" | "oscuro">("claro");
   const [selected, setSelected] = useState<AelpCapture | null>(null);
   const triggerRef = useRef<HTMLButtonElement | null>(null);
@@ -153,7 +153,7 @@ export function AelpCaptureGallery({
                 aria-selected={mobileShowcase ? undefined : isSelected}
                 aria-pressed={mobileShowcase ? isSelected : undefined}
                 className={`aelp-gallery-filter${isSelected ? " aelp-gallery-filter-active" : ""}`}
-                onClick={() => setSelectedCategory(mobileShowcase && isSelected ? "__all__" : category.key)}
+                onClick={() => setSelectedCategory(category.key)}
               >
                 {category.label} <span>({count})</span>
               </button>
