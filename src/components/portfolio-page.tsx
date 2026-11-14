@@ -168,9 +168,9 @@ export function PortfolioPage() {
           </div>
           <div className="certificates-grid" data-reveal>
             {[
-              { title: "Excel Basics for Data Analysis", issuer: "IBM · Coursera", href: "/certificates/coursera-1a3df3oetj0j.pdf" },
-              { title: "Introduction to Data Analytics", issuer: "IBM · Coursera", href: "/certificates/coursera-4tc1uninet65.pdf" },
-              { title: "Data Visualization and Dashboards with Excel and Cognos", issuer: "IBM · Coursera", href: "/certificates/coursera-k311rbbqbk98.pdf" },
+              { title: "Excel Basics for Data Analysis", issuer: "IBM · Coursera", issuerEn: "IBM · Coursera", href: "/certificates/coursera-1a3df3oetj0j.pdf" },
+              { title: "Introduction to Data Analytics", issuer: "IBM · Coursera", issuerEn: "IBM · Coursera", href: "/certificates/coursera-4tc1uninet65.pdf" },
+              { title: "Data Visualization and Dashboards with Excel and Cognos", issuer: "IBM · Coursera", issuerEn: "IBM · Coursera", href: "/certificates/coursera-k311rbbqbk98.pdf" },
               { title: "Creación de dashboards interactivos en Excel utilizando Python", issuer: "Certificado de formación", issuerEn: "Training certificate", href: "/certificates/dashboards-python-excel.pdf" },
               { title: "SQL básico", issuer: "Certificado de formación", issuerEn: "Training certificate", href: "/certificates/sql-basic-certificate.pdf" },
             ].map(({ title, issuer, issuerEn, href }, index) => (
