@@ -94,13 +94,6 @@ export function FinScopeCaseStudy() {
         </div>
       </section>
 
-      <section className={`${styles.section} ${styles.limit}`}><ShieldCheck/><div>
-        <p className={styles.eyebrow}>05 / <T es="LÍMITES Y SIGUIENTES PASOS" en="LIMITATIONS AND NEXT STEPS"/></p>
-        <h2><T es="Lo que el dashboard no puede afirmar." en="What the dashboard cannot claim."/></h2>
-        <p><T es="La infraestructura reportada no mide uso efectivo, calidad del servicio, costos, demanda ni tiempo de traslado. Los 12 puntos visibles en Álvaro Obregón son registros del extracto de OpenStreetMap, no el total de cajeros CNBV; la ausencia de puntos tampoco prueba ausencia de cajeros. El agregado nacional excluye registros sin municipio identificado. Las áreas de INEGI son límites geoestadísticos simplificados. El archivo CNBV empleado llega a diciembre de 2025 y existen publicaciones posteriores." en="Reported infrastructure does not measure actual use, service quality, cost, demand or travel time. The 12 visible points in Álvaro Obregón are records from the OpenStreetMap extract, not the CNBV ATM total; missing dots do not prove there are no ATMs. The national aggregate excludes records without an identified municipality. INEGI areas are simplified statistical boundaries. The CNBV file used ends in December 2025, and later releases exist."/></p>
-        <p><T es="Para avanzar: actualizar el corte oficial, validar ubicaciones de cajeros con fuentes autorizadas, documentar un proceso nacional reproducible y sumar variables de acceso real antes de proponer intervenciones." en="Next: update the official data cut, validate ATM locations with authorized sources, document a reproducible national pipeline and add measures of actual access before proposing interventions."/></p>
-        <p className={styles.sources}><T es="Fuentes:" en="Sources:"/> <a href="https://www.gob.mx/cnbv/acciones-y-programas/bases-de-datos-de-inclusion-financiera" target="_blank" rel="noreferrer">CNBV</a> · <a href="https://www.inegi.org.mx/temas/mg/" target="_blank" rel="noreferrer">INEGI</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noreferrer">OpenStreetMap</a> · <a href="https://download.geofabrik.de/north-america/mexico.html" target="_blank" rel="noreferrer">Geofabrik</a></p>
-      </div></section>
       <footer className={styles.footer}><Link href="/#proyectos"><ArrowLeft size={16}/> <T es="Todos los proyectos" en="All projects"/></Link><Link href="/proyectos/tutor-ia-nem/"><T es="Siguiente proyecto" en="Next project"/> <ArrowUpRight size={16}/></Link></footer>
     </div>
   </main>;
