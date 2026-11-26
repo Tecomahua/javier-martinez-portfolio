@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { ArrowRight, ArrowUpRight, Download, Github, Linkedin } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Eye, Github, Linkedin } from "lucide-react";
 import { profile } from "@/data/profile";
 import { LanguageText, useLanguage } from "@/components/language-provider";
 import { getPublicAssetPath } from "@/lib/site-url";
@@ -47,8 +47,14 @@ export function HomeHero() {
             <a className={`button ${styles.secondary}`} href="#contacto">
               <LanguageText es="Contactarme" en="Contact me" />
             </a>
-            <a className={`button ${styles.secondary}`} href={getPublicAssetPath(`/cv/${language === "en" ? "javier-martinez-data-analyst-en.pdf" : "javier-martinez-analista-de-datos-es.pdf"}`)} download>
-              <LanguageText es="Descargar CV" en="Download Resume" /> <Download size={16} aria-hidden="true" />
+            <a
+              className={`button ${styles.secondary}`}
+              href={getPublicAssetPath(`/cv/${language === "en" ? "javier-martinez-data-analyst-en.pdf" : "javier-martinez-analista-de-datos-es.pdf"}`)}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <LanguageText es="Ver CV" en="View résumé" /> <Eye size={16} aria-hidden="true" />
+              <span className="sr-only"> (<LanguageText es="abre en otra pestaña" en="opens in a new tab" />)</span>
             </a>
             <a className={`button ${styles.secondary}`} href="#certificados">
               <LanguageText es="Certificados" en="Certificates" />

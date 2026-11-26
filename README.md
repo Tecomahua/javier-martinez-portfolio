@@ -30,3 +30,4 @@ Este repositorio se publica automáticamente en [tecomahua.github.io/javier-mart
 - Perfil, navegación, proyectos y habilidades: `src/data/`.
 - Páginas de proyecto: `src/app/proyectos/`.
 - Recursos públicos del sitio: `public/`.
+- CV en español e inglés: `public/cv/`; se visualiza en una pestaña nueva según el idioma activo.
